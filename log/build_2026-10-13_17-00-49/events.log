@@ -1,0 +1,216 @@
+[0.000000] (-) TimerEvent: {}
+[0.000089] (my_cpp_package) JobQueued: {'identifier': 'my_cpp_package', 'dependencies': OrderedDict()}
+[0.000801] (my_cpp_package) JobStarted: {'identifier': 'my_cpp_package'}
+[0.020983] (my_cpp_package) JobProgress: {'identifier': 'my_cpp_package', 'progress': 'cmake'}
+[0.022361] (my_cpp_package) Command: {'cmd': ['/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cmake', '/home/stefano/work/my_ros2_project/src/my_cpp_package', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/stefano/work/my_ros2_project/install/my_cpp_package'], 'cwd': '/home/stefano/work/my_ros2_project/build/my_cpp_package', 'env': OrderedDict({'CONDA_ENV_SHLVL_2_PIXI_EXE': '/home/stefano/.pixi/bin/pixi', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PIXI_ENVIRONMENT_NAME': 'default', 'LC_TIME': 'es_ES.UTF-8', 'USER': 'stefano', 'PIXI_EXE': '/home/stefano/.pixi/bin/pixi', 'XDG_SESSION_TYPE': 'x11', 'LD_LIBRARY_PATH': '/home/stefano/work/my_ros2_project/.pixi/envs/default/opt/rviz_ogre_vendor/lib', 'ROS_ETC_DIR': '/home/stefano/work/my_ros2_project/.pixi/envs/default/etc/ros', 'SHLVL': '2', 'CONDA_ENV_SHLVL_2_CONDA_PREFIX': '/home/stefano/work/my_ros2_project/.pixi/envs/default', 'CONDA_ENV_SHLVL_2_PIXI_IN_SHELL': '1', 'CONDA_SHLVL': '2', 'HOME': '/home/stefano', 'OLDPWD': '/home/stefano/work/my_ros2_project/install', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', '_CONDA_SET_PROJ_DATA': '/home/stefano/work/my_ros2_project/.pixi/envs/default/share/proj', 'PS1': '(my_ros2_project) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'LC_MONETARY': 'es_ES.UTF-8', 'MANAGERPID': '9132', 'PIXI_IN_SHELL': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'SYSTEMD_EXEC_PID': '9813', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '13918', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator2343a10e6c2480e111dd3e9e564eb7966', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'GNOME_KEYRING_CONTROL': '/run/user/1004/keyring', 'COLCON_PREFIX_PATH': '/home/stefano/work/my_ros2_project/install', 'CONDA_ENV_SHLVL_2_PIXI_ENVIRONMENT_PLATFORMS': 'linux-64', 'ROS_DISTRO': 'humble', 'LOGNAME': 'stefano', 'JOURNAL_STREAM': '8:43510', '_': '/home/stefano/.pixi/bin/pixi', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1004.slice/user@1004.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'CONDA_ENV_SHLVL_2_PIXI_PROJECT_VERSION': '0.1.0', 'PIXI_ENVIRONMENT_PLATFORMS': 'linux-64', 'TERM': 'xterm-256color', 'USERNAME': 'stefano', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'ROS_OS_OVERRIDE': 'conda:linux', 'WINDOWPATH': '3', 'PATH': '/home/stefano/work/my_ros2_project/.pixi/envs/default/bin:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin:/home/stefano/.pixi/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'INVOCATION_ID': 'fa8139a2d68940a8a607c9b3adf1cf34', 'PROJ_NETWORK': 'ON', 'SESSION_MANAGER': 'local/colchoneros:@/tmp/.ICE-unix/9646,unix/colchoneros:/tmp/.ICE-unix/9646', 'CONDA_ENV_SHLVL_2_PIXI_PROMPT': '(my_ros2_project)', 'LC_ADDRESS': 'es_ES.UTF-8', 'PIXI_PROJECT_VERSION': '0.1.0', 'PROJ_DATA': '/home/stefano/work/my_ros2_project/.pixi/envs/default/share/proj', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':2', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'es_ES.UTF-8', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'XAUTHORITY': '/run/user/1004/gdm/Xauthority', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'AMENT_PREFIX_PATH': '/home/stefano/work/my_ros2_project/.pixi/envs/default', 'CONDA_ENV_SHLVL_2_PIXI_PROJECT_ROOT': '/home/stefano/work/my_ros2_project', 'GSETTINGS_SCHEMA_DIR': '/home/stefano/work/my_ros2_project/.pixi/envs/default/share/glib-2.0/schemas', 'PIXI_PROMPT': '(my_ros2_project)', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'XML_CATALOG_FILES': 'file:///home/stefano/work/my_ros2_project/.pixi/envs/default/etc/xml/catalog file:///etc/xml/catalog file:///home/stefano/work/my_ros2_project/.pixi/envs/default/etc/xml/catalog file:///etc/xml/catalog', 'LC_NAME': 'es_ES.UTF-8', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:74e46464-9122-416c-9f2c-17a62dea03ed', 'CONDA_ENV_SHLVL_2_PIXI_PROJECT_MANIFEST': '/home/stefano/work/my_ros2_project/pixi.toml', 'GDMSESSION': 'ubuntu', 'QT_ACCESSIBILITY': '1', 'CONDA_DEFAULT_ENV': 'my_ros2_project', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_ENV_SHLVL_2_PIXI_PROJECT_NAME': 'my_ros2_project', 'LC_MEASUREMENT': 'es_ES.UTF-8', 'PIXI_PROJECT_ROOT': '/home/stefano/work/my_ros2_project', 'GPG_AGENT_INFO': '/run/user/1004/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'es_ES.UTF-8', 'PIXI_PROJECT_MANIFEST': '/home/stefano/work/my_ros2_project/pixi.toml', 'QT_IM_MODULE': 'ibus', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/stefano/work/my_ros2_project/build/my_cpp_package', 'PIXI_PROJECT_NAME': 'my_ros2_project', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'LC_NUMERIC': 'es_ES.UTF-8', 'PYTHONPATH': '/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/python314/site-packages:/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/python3.14/site-packages', 'CONDA_ENV_SHLVL_2_PIXI_ENVIRONMENT_NAME': 'default', 'CONDA_PREFIX': '/home/stefano/work/my_ros2_project/.pixi/envs/default', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '/home/stefano/work/my_ros2_project/.pixi/envs/default/share/glib-2.0/schemas', 'LC_PAPER': 'es_ES.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/stefano/work/my_ros2_project/install/my_cpp_package:/home/stefano/work/my_ros2_project/.pixi/envs/default', 'CONDA_ENV_SHLVL_2_CONDA_DEFAULT_ENV': 'my_ros2_project', 'INIT_CWD': '/home/stefano/work/my_ros2_project'}), 'shell': False}
+[0.099825] (-) TimerEvent: {}
+[0.101295] (my_cpp_package) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.101612] (my_cpp_package) StderrLine: {'line': b'  Compatibility with CMake < 3.10 will be removed from a future version of\n'}
+[0.101752] (my_cpp_package) StderrLine: {'line': b'  CMake.\n'}
+[0.101872] (my_cpp_package) StderrLine: {'line': b'\n'}
+[0.102002] (my_cpp_package) StderrLine: {'line': b'  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax\n'}
+[0.102130] (my_cpp_package) StderrLine: {'line': b'  to tell CMake that the project requires at least <min> but has been updated\n'}
+[0.102243] (my_cpp_package) StderrLine: {'line': b'  to work with policies introduced by <max> or earlier.\n'}
+[0.102353] (my_cpp_package) StderrLine: {'line': b'\n'}
+[0.102461] (my_cpp_package) StderrLine: {'line': b'\x1b[0m\n'}
+[0.200027] (-) TimerEvent: {}
+[0.300334] (-) TimerEvent: {}
+[0.333961] (my_cpp_package) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake/cmake)\n'}
+[0.400535] (-) TimerEvent: {}
+[0.500809] (-) TimerEvent: {}
+[0.600996] (-) TimerEvent: {}
+[0.699585] (my_cpp_package) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.701088] (-) TimerEvent: {}
+[0.801322] (-) TimerEvent: {}
+[0.901588] (-) TimerEvent: {}
+[0.916613] (my_cpp_package) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rclcpp/cmake)\n'}
+[1.001782] (-) TimerEvent: {}
+[1.102121] (-) TimerEvent: {}
+[1.202489] (-) TimerEvent: {}
+[1.286413] (my_cpp_package) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rosidl_generator_c/cmake)\n'}
+[1.302647] (-) TimerEvent: {}
+[1.324492] (my_cpp_package) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rosidl_adapter/cmake)\n'}
+[1.375720] (my_cpp_package) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rosidl_generator_cpp/cmake)\n'}
+[1.402827] (-) TimerEvent: {}
+[1.449209] (my_cpp_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.502955] (-) TimerEvent: {}
+[1.539032] (my_cpp_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.603112] (-) TimerEvent: {}
+[1.703349] (-) TimerEvent: {}
+[1.803551] (-) TimerEvent: {}
+[1.903844] (-) TimerEvent: {}
+[1.975450] (my_cpp_package) StdoutLine: {'line': b"-- Checking for module 'yaml-0.1'\n"}
+[2.003951] (-) TimerEvent: {}
+[2.067207] (my_cpp_package) StdoutLine: {'line': b'--   Found yaml-0.1, version 0.2.5\n'}
+[2.104030] (-) TimerEvent: {}
+[2.204217] (-) TimerEvent: {}
+[2.304488] (-) TimerEvent: {}
+[2.310808] (my_cpp_package) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rmw_implementation_cmake/cmake)\n'}
+[2.356104] (my_cpp_package) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.404594] (-) TimerEvent: {}
+[2.504807] (-) TimerEvent: {}
+[2.605011] (-) TimerEvent: {}
+[2.705170] (-) TimerEvent: {}
+[2.805349] (-) TimerEvent: {}
+[2.815278] (my_cpp_package) StdoutLine: {'line': b'-- Found OpenSSL: /home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libcrypto.so (found version "3.6.5")\n'}
+[2.850423] (my_cpp_package) StdoutLine: {'line': b'-- Found FastRTPS: /home/stefano/work/my_ros2_project/.pixi/envs/default/include\n'}
+[2.897305] (my_cpp_package) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.905427] (-) TimerEvent: {}
+[3.005642] (-) TimerEvent: {}
+[3.006256] (my_cpp_package) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.105777] (-) TimerEvent: {}
+[3.206093] (-) TimerEvent: {}
+[3.306465] (-) TimerEvent: {}
+[3.406765] (-) TimerEvent: {}
+[3.506985] (-) TimerEvent: {}
+[3.530020] (my_cpp_package) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[3.530319] (my_cpp_package) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[3.607084] (-) TimerEvent: {}
+[3.622302] (my_cpp_package) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[3.622482] (my_cpp_package) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[3.698820] (my_cpp_package) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[3.700052] (my_cpp_package) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[3.707188] (-) TimerEvent: {}
+[3.807425] (-) TimerEvent: {}
+[3.907696] (-) TimerEvent: {}
+[3.973850] (my_cpp_package) StdoutLine: {'line': b'-- Found std_msgs: 4.9.1 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/std_msgs/cmake)\n'}
+[4.007813] (-) TimerEvent: {}
+[4.022780] (my_cpp_package) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_lint_auto/cmake)\n'}
+[4.107913] (-) TimerEvent: {}
+[4.208194] (-) TimerEvent: {}
+[4.304462] (my_cpp_package) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.305200] (my_cpp_package) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/stefano/work/my_ros2_project/src/my_cpp_package/include>\n'}
+[4.305617] (my_cpp_package) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.308306] (-) TimerEvent: {}
+[4.308649] (my_cpp_package) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.312737] (my_cpp_package) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.313207] (my_cpp_package) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.314765] (my_cpp_package) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.317033] (my_cpp_package) StdoutLine: {'line': b'-- Configuring done (4.2s)\n'}
+[4.389382] (my_cpp_package) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[4.392994] (my_cpp_package) StdoutLine: {'line': b'-- Build files have been written to: /home/stefano/work/my_ros2_project/build/my_cpp_package\n'}
+[4.405588] (my_cpp_package) CommandEnded: {'returncode': 0}
+[4.406573] (my_cpp_package) JobProgress: {'identifier': 'my_cpp_package', 'progress': 'build'}
+[4.407758] (my_cpp_package) Command: {'cmd': ['/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cmake', '--build', '/home/stefano/work/my_ros2_project/build/my_cpp_package', '--', '-j4', '-l4'], 'cwd': '/home/stefano/work/my_ros2_project/build/my_cpp_package', 'env': OrderedDict({'CONDA_ENV_SHLVL_2_PIXI_EXE': '/home/stefano/.pixi/bin/pixi', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PIXI_ENVIRONMENT_NAME': 'default', 'LC_TIME': 'es_ES.UTF-8', 'USER': 'stefano', 'PIXI_EXE': '/home/stefano/.pixi/bin/pixi', 'XDG_SESSION_TYPE': 'x11', 'LD_LIBRARY_PATH': '/home/stefano/work/my_ros2_project/.pixi/envs/default/opt/rviz_ogre_vendor/lib', 'ROS_ETC_DIR': '/home/stefano/work/my_ros2_project/.pixi/envs/default/etc/ros', 'SHLVL': '2', 'CONDA_ENV_SHLVL_2_CONDA_PREFIX': '/home/stefano/work/my_ros2_project/.pixi/envs/default', 'CONDA_ENV_SHLVL_2_PIXI_IN_SHELL': '1', 'CONDA_SHLVL': '2', 'HOME': '/home/stefano', 'OLDPWD': '/home/stefano/work/my_ros2_project/install', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', '_CONDA_SET_PROJ_DATA': '/home/stefano/work/my_ros2_project/.pixi/envs/default/share/proj', 'PS1': '(my_ros2_project) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'LC_MONETARY': 'es_ES.UTF-8', 'MANAGERPID': '9132', 'PIXI_IN_SHELL': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'SYSTEMD_EXEC_PID': '9813', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '13918', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator2343a10e6c2480e111dd3e9e564eb7966', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'GNOME_KEYRING_CONTROL': '/run/user/1004/keyring', 'COLCON_PREFIX_PATH': '/home/stefano/work/my_ros2_project/install', 'CONDA_ENV_SHLVL_2_PIXI_ENVIRONMENT_PLATFORMS': 'linux-64', 'ROS_DISTRO': 'humble', 'LOGNAME': 'stefano', 'JOURNAL_STREAM': '8:43510', '_': '/home/stefano/.pixi/bin/pixi', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1004.slice/user@1004.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'CONDA_ENV_SHLVL_2_PIXI_PROJECT_VERSION': '0.1.0', 'PIXI_ENVIRONMENT_PLATFORMS': 'linux-64', 'TERM': 'xterm-256color', 'USERNAME': 'stefano', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'ROS_OS_OVERRIDE': 'conda:linux', 'WINDOWPATH': '3', 'PATH': '/home/stefano/work/my_ros2_project/.pixi/envs/default/bin:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin:/home/stefano/.pixi/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'INVOCATION_ID': 'fa8139a2d68940a8a607c9b3adf1cf34', 'PROJ_NETWORK': 'ON', 'SESSION_MANAGER': 'local/colchoneros:@/tmp/.ICE-unix/9646,unix/colchoneros:/tmp/.ICE-unix/9646', 'CONDA_ENV_SHLVL_2_PIXI_PROMPT': '(my_ros2_project)', 'LC_ADDRESS': 'es_ES.UTF-8', 'PIXI_PROJECT_VERSION': '0.1.0', 'PROJ_DATA': '/home/stefano/work/my_ros2_project/.pixi/envs/default/share/proj', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':2', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'es_ES.UTF-8', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'XAUTHORITY': '/run/user/1004/gdm/Xauthority', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'AMENT_PREFIX_PATH': '/home/stefano/work/my_ros2_project/.pixi/envs/default', 'CONDA_ENV_SHLVL_2_PIXI_PROJECT_ROOT': '/home/stefano/work/my_ros2_project', 'GSETTINGS_SCHEMA_DIR': '/home/stefano/work/my_ros2_project/.pixi/envs/default/share/glib-2.0/schemas', 'PIXI_PROMPT': '(my_ros2_project)', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'XML_CATALOG_FILES': 'file:///home/stefano/work/my_ros2_project/.pixi/envs/default/etc/xml/catalog file:///etc/xml/catalog file:///home/stefano/work/my_ros2_project/.pixi/envs/default/etc/xml/catalog file:///etc/xml/catalog', 'LC_NAME': 'es_ES.UTF-8', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:74e46464-9122-416c-9f2c-17a62dea03ed', 'CONDA_ENV_SHLVL_2_PIXI_PROJECT_MANIFEST': '/home/stefano/work/my_ros2_project/pixi.toml', 'GDMSESSION': 'ubuntu', 'QT_ACCESSIBILITY': '1', 'CONDA_DEFAULT_ENV': 'my_ros2_project', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_ENV_SHLVL_2_PIXI_PROJECT_NAME': 'my_ros2_project', 'LC_MEASUREMENT': 'es_ES.UTF-8', 'PIXI_PROJECT_ROOT': '/home/stefano/work/my_ros2_project', 'GPG_AGENT_INFO': '/run/user/1004/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'es_ES.UTF-8', 'PIXI_PROJECT_MANIFEST': '/home/stefano/work/my_ros2_project/pixi.toml', 'QT_IM_MODULE': 'ibus', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/stefano/work/my_ros2_project/build/my_cpp_package', 'PIXI_PROJECT_NAME': 'my_ros2_project', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'LC_NUMERIC': 'es_ES.UTF-8', 'PYTHONPATH': '/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/python314/site-packages:/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/python3.14/site-packages', 'CONDA_ENV_SHLVL_2_PIXI_ENVIRONMENT_NAME': 'default', 'CONDA_PREFIX': '/home/stefano/work/my_ros2_project/.pixi/envs/default', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '/home/stefano/work/my_ros2_project/.pixi/envs/default/share/glib-2.0/schemas', 'LC_PAPER': 'es_ES.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/stefano/work/my_ros2_project/install/my_cpp_package:/home/stefano/work/my_ros2_project/.pixi/envs/default', 'CONDA_ENV_SHLVL_2_CONDA_DEFAULT_ENV': 'my_ros2_project', 'INIT_CWD': '/home/stefano/work/my_ros2_project'}), 'shell': False}
+[4.408378] (-) TimerEvent: {}
+[4.419950] (my_cpp_package) StdoutLine: {'line': b'\n'}
+[4.508605] (-) TimerEvent: {}
+[4.609053] (-) TimerEvent: {}
+[4.709441] (-) TimerEvent: {}
+[4.809830] (-) TimerEvent: {}
+[4.910229] (-) TimerEvent: {}
+[5.010612] (-) TimerEvent: {}
+[5.111073] (-) TimerEvent: {}
+[5.211465] (-) TimerEvent: {}
+[5.311834] (-) TimerEvent: {}
+[5.412237] (-) TimerEvent: {}
+[5.512606] (-) TimerEvent: {}
+[5.612994] (-) TimerEvent: {}
+[5.713396] (-) TimerEvent: {}
+[5.813826] (-) TimerEvent: {}
+[5.914319] (-) TimerEvent: {}
+[6.014714] (-) TimerEvent: {}
+[6.115070] (-) TimerEvent: {}
+[6.215276] (-) TimerEvent: {}
+[6.315505] (-) TimerEvent: {}
+[6.415695] (-) TimerEvent: {}
+[6.515923] (-) TimerEvent: {}
+[6.616139] (-) TimerEvent: {}
+[6.716336] (-) TimerEvent: {}
+[6.816526] (-) TimerEvent: {}
+[6.916757] (-) TimerEvent: {}
+[7.016989] (-) TimerEvent: {}
+[7.117258] (-) TimerEvent: {}
+[7.217484] (-) TimerEvent: {}
+[7.317695] (-) TimerEvent: {}
+[7.417939] (-) TimerEvent: {}
+[7.518150] (-) TimerEvent: {}
+[7.618414] (-) TimerEvent: {}
+[7.718667] (-) TimerEvent: {}
+[7.819056] (-) TimerEvent: {}
+[7.919376] (-) TimerEvent: {}
+[8.019621] (-) TimerEvent: {}
+[8.119887] (-) TimerEvent: {}
+[8.220120] (-) TimerEvent: {}
+[8.320420] (-) TimerEvent: {}
+[8.420725] (-) TimerEvent: {}
+[8.520915] (-) TimerEvent: {}
+[8.621111] (-) TimerEvent: {}
+[8.721295] (-) TimerEvent: {}
+[8.821486] (-) TimerEvent: {}
+[8.921675] (-) TimerEvent: {}
+[9.021848] (-) TimerEvent: {}
+[9.122040] (-) TimerEvent: {}
+[9.222228] (-) TimerEvent: {}
+[9.322447] (-) TimerEvent: {}
+[9.422641] (-) TimerEvent: {}
+[9.522822] (-) TimerEvent: {}
+[9.623016] (-) TimerEvent: {}
+[9.723209] (-) TimerEvent: {}
+[9.823394] (-) TimerEvent: {}
+[9.923586] (-) TimerEvent: {}
+[10.023782] (-) TimerEvent: {}
+[10.124009] (-) TimerEvent: {}
+[10.224218] (-) TimerEvent: {}
+[10.324414] (-) TimerEvent: {}
+[10.424609] (-) TimerEvent: {}
+[10.524799] (-) TimerEvent: {}
+[10.625019] (-) TimerEvent: {}
+[10.725212] (-) TimerEvent: {}
+[10.825407] (-) TimerEvent: {}
+[10.925611] (-) TimerEvent: {}
+[11.025813] (-) TimerEvent: {}
+[11.126031] (-) TimerEvent: {}
+[11.226225] (-) TimerEvent: {}
+[11.326480] (-) TimerEvent: {}
+[11.426672] (-) TimerEvent: {}
+[11.526916] (-) TimerEvent: {}
+[11.627138] (-) TimerEvent: {}
+[11.727338] (-) TimerEvent: {}
+[11.827520] (-) TimerEvent: {}
+[11.927702] (-) TimerEvent: {}
+[12.027869] (-) TimerEvent: {}
+[12.128056] (-) TimerEvent: {}
+[12.228241] (-) TimerEvent: {}
+[12.328424] (-) TimerEvent: {}
+[12.428610] (-) TimerEvent: {}
+[12.528799] (-) TimerEvent: {}
+[12.628986] (-) TimerEvent: {}
+[12.698974] (my_cpp_package) StdoutLine: {'line': b'[0/2] Building CXX object CMakeFiles/my_cpp_node.dir/src/my_cpp_node.cpp.o\x1b[K\n'}
+[12.699925] (my_cpp_package) StdoutLine: {'line': b'[1/2] Building CXX object CMakeFiles/my_cpp_node.dir/src/my_cpp_node.cpp.o\x1b[K\n'}
+[12.729130] (-) TimerEvent: {}
+[12.829428] (-) TimerEvent: {}
+[12.929813] (-) TimerEvent: {}
+[13.030216] (-) TimerEvent: {}
+[13.130561] (-) TimerEvent: {}
+[13.231051] (-) TimerEvent: {}
+[13.331341] (-) TimerEvent: {}
+[13.381190] (my_cpp_package) StdoutLine: {'line': b'[1/2] Linking CXX executable my_cpp_node\x1b[K\n'}
+[13.381392] (my_cpp_package) StdoutLine: {'line': b'[2/2] Linking CXX executable my_cpp_node\x1b[K\n'}
+[13.383589] (my_cpp_package) CommandEnded: {'returncode': 0}
+[13.384260] (my_cpp_package) JobProgress: {'identifier': 'my_cpp_package', 'progress': 'install'}
+[13.431467] (-) TimerEvent: {}
+[13.451583] (my_cpp_package) Command: {'cmd': ['/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cmake', '--install', '/home/stefano/work/my_ros2_project/build/my_cpp_package'], 'cwd': '/home/stefano/work/my_ros2_project/build/my_cpp_package', 'env': OrderedDict({'CONDA_ENV_SHLVL_2_PIXI_EXE': '/home/stefano/.pixi/bin/pixi', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PIXI_ENVIRONMENT_NAME': 'default', 'LC_TIME': 'es_ES.UTF-8', 'USER': 'stefano', 'PIXI_EXE': '/home/stefano/.pixi/bin/pixi', 'XDG_SESSION_TYPE': 'x11', 'LD_LIBRARY_PATH': '/home/stefano/work/my_ros2_project/.pixi/envs/default/opt/rviz_ogre_vendor/lib', 'ROS_ETC_DIR': '/home/stefano/work/my_ros2_project/.pixi/envs/default/etc/ros', 'SHLVL': '2', 'CONDA_ENV_SHLVL_2_CONDA_PREFIX': '/home/stefano/work/my_ros2_project/.pixi/envs/default', 'CONDA_ENV_SHLVL_2_PIXI_IN_SHELL': '1', 'CONDA_SHLVL': '2', 'HOME': '/home/stefano', 'OLDPWD': '/home/stefano/work/my_ros2_project/install', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', '_CONDA_SET_PROJ_DATA': '/home/stefano/work/my_ros2_project/.pixi/envs/default/share/proj', 'PS1': '(my_ros2_project) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'LC_MONETARY': 'es_ES.UTF-8', 'MANAGERPID': '9132', 'PIXI_IN_SHELL': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'SYSTEMD_EXEC_PID': '9813', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '13918', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator2343a10e6c2480e111dd3e9e564eb7966', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'GNOME_KEYRING_CONTROL': '/run/user/1004/keyring', 'COLCON_PREFIX_PATH': '/home/stefano/work/my_ros2_project/install', 'CONDA_ENV_SHLVL_2_PIXI_ENVIRONMENT_PLATFORMS': 'linux-64', 'ROS_DISTRO': 'humble', 'LOGNAME': 'stefano', 'JOURNAL_STREAM': '8:43510', '_': '/home/stefano/.pixi/bin/pixi', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1004.slice/user@1004.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'CONDA_ENV_SHLVL_2_PIXI_PROJECT_VERSION': '0.1.0', 'PIXI_ENVIRONMENT_PLATFORMS': 'linux-64', 'TERM': 'xterm-256color', 'USERNAME': 'stefano', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'ROS_OS_OVERRIDE': 'conda:linux', 'WINDOWPATH': '3', 'PATH': '/home/stefano/work/my_ros2_project/.pixi/envs/default/bin:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin:/home/stefano/.pixi/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'INVOCATION_ID': 'fa8139a2d68940a8a607c9b3adf1cf34', 'PROJ_NETWORK': 'ON', 'SESSION_MANAGER': 'local/colchoneros:@/tmp/.ICE-unix/9646,unix/colchoneros:/tmp/.ICE-unix/9646', 'CONDA_ENV_SHLVL_2_PIXI_PROMPT': '(my_ros2_project)', 'LC_ADDRESS': 'es_ES.UTF-8', 'PIXI_PROJECT_VERSION': '0.1.0', 'PROJ_DATA': '/home/stefano/work/my_ros2_project/.pixi/envs/default/share/proj', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1004', 'DISPLAY': ':2', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'es_ES.UTF-8', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'XAUTHORITY': '/run/user/1004/gdm/Xauthority', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'AMENT_PREFIX_PATH': '/home/stefano/work/my_ros2_project/.pixi/envs/default', 'CONDA_ENV_SHLVL_2_PIXI_PROJECT_ROOT': '/home/stefano/work/my_ros2_project', 'GSETTINGS_SCHEMA_DIR': '/home/stefano/work/my_ros2_project/.pixi/envs/default/share/glib-2.0/schemas', 'PIXI_PROMPT': '(my_ros2_project)', 'SSH_AUTH_SOCK': '/run/user/1004/keyring/ssh', 'XML_CATALOG_FILES': 'file:///home/stefano/work/my_ros2_project/.pixi/envs/default/etc/xml/catalog file:///etc/xml/catalog file:///home/stefano/work/my_ros2_project/.pixi/envs/default/etc/xml/catalog file:///etc/xml/catalog', 'LC_NAME': 'es_ES.UTF-8', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:74e46464-9122-416c-9f2c-17a62dea03ed', 'CONDA_ENV_SHLVL_2_PIXI_PROJECT_MANIFEST': '/home/stefano/work/my_ros2_project/pixi.toml', 'GDMSESSION': 'ubuntu', 'QT_ACCESSIBILITY': '1', 'CONDA_DEFAULT_ENV': 'my_ros2_project', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_ENV_SHLVL_2_PIXI_PROJECT_NAME': 'my_ros2_project', 'LC_MEASUREMENT': 'es_ES.UTF-8', 'PIXI_PROJECT_ROOT': '/home/stefano/work/my_ros2_project', 'GPG_AGENT_INFO': '/run/user/1004/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'es_ES.UTF-8', 'PIXI_PROJECT_MANIFEST': '/home/stefano/work/my_ros2_project/pixi.toml', 'QT_IM_MODULE': 'ibus', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/stefano/work/my_ros2_project/build/my_cpp_package', 'PIXI_PROJECT_NAME': 'my_ros2_project', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'LC_NUMERIC': 'es_ES.UTF-8', 'PYTHONPATH': '/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/python314/site-packages:/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/python3.14/site-packages', 'CONDA_ENV_SHLVL_2_PIXI_ENVIRONMENT_NAME': 'default', 'CONDA_PREFIX': '/home/stefano/work/my_ros2_project/.pixi/envs/default', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '/home/stefano/work/my_ros2_project/.pixi/envs/default/share/glib-2.0/schemas', 'LC_PAPER': 'es_ES.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/stefano/work/my_ros2_project/install/my_cpp_package:/home/stefano/work/my_ros2_project/.pixi/envs/default', 'CONDA_ENV_SHLVL_2_CONDA_DEFAULT_ENV': 'my_ros2_project', 'INIT_CWD': '/home/stefano/work/my_ros2_project'}), 'shell': False}
+[13.459330] (my_cpp_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.459945] (my_cpp_package) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[13.468365] (my_cpp_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/lib/my_cpp_package/my_cpp_node\n'}
+[13.469143] (my_cpp_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/ament_index/resource_index/package_run_dependencies/my_cpp_package\n'}
+[13.469641] (my_cpp_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/ament_index/resource_index/parent_prefix_path/my_cpp_package\n'}
+[13.469985] (my_cpp_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/environment/ament_prefix_path.sh\n'}
+[13.470190] (my_cpp_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/environment/ament_prefix_path.dsv\n'}
+[13.470461] (my_cpp_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/environment/path.sh\n'}
+[13.470653] (my_cpp_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/environment/path.dsv\n'}
+[13.476279] (my_cpp_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/local_setup.bash\n'}
+[13.478680] (my_cpp_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/local_setup.sh\n'}
+[13.482122] (my_cpp_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/local_setup.zsh\n'}
+[13.482943] (my_cpp_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/local_setup.dsv\n'}
+[13.483221] (my_cpp_package) StdoutLine: {'line': b'-- Symlinking: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/package.dsv\n'}
+[13.492363] (my_cpp_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/ament_index/resource_index/packages/my_cpp_package\n'}
+[13.502413] (my_cpp_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/cmake/my_cpp_packageConfig.cmake\n'}
+[13.503944] (my_cpp_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/cmake/my_cpp_packageConfig-version.cmake\n'}
+[13.504527] (my_cpp_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/package.xml\n'}
+[13.506933] (my_cpp_package) CommandEnded: {'returncode': 0}
+[13.531591] (-) TimerEvent: {}
+[13.632265] (-) TimerEvent: {}
+[13.686898] (my_cpp_package) JobEnded: {'identifier': 'my_cpp_package', 'rc': 0}
+[13.688912] (-) EventReactorShutdown: {}

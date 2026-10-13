@@ -1,0 +1,72 @@
+[0.022s] Invoking command in '/home/stefano/work/my_ros2_project/build/my_cpp_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/work/my_ros2_project/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(my_ros2_project) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(my_ros2_project) PS1=(my_ros2_project) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cmake /home/stefano/work/my_ros2_project/src/my_cpp_package -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/stefano/work/my_ros2_project/install/my_cpp_package
+[0.101s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.101s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.101s]   CMake.
+[0.101s] 
+[0.101s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.101s]   to tell CMake that the project requires at least <min> but has been updated
+[0.101s]   to work with policies introduced by <max> or earlier.
+[0.102s] 
+[0.102s] [0m
+[0.333s] -- Found ament_cmake: 1.3.14 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake/cmake)
+[0.699s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.916s] -- Found rclcpp: 16.0.19 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rclcpp/cmake)
+[1.286s] -- Found rosidl_generator_c: 3.1.8 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rosidl_generator_c/cmake)
+[1.324s] -- Found rosidl_adapter: 3.1.8 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rosidl_adapter/cmake)
+[1.375s] -- Found rosidl_generator_cpp: 3.1.8 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rosidl_generator_cpp/cmake)
+[1.449s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.538s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.975s] -- Checking for module 'yaml-0.1'
+[2.066s] --   Found yaml-0.1, version 0.2.5
+[2.310s] -- Found rmw_implementation_cmake: 6.1.2 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rmw_implementation_cmake/cmake)
+[2.355s] -- Found rmw_fastrtps_cpp: 6.2.10 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rmw_fastrtps_cpp/cmake)
+[2.815s] -- Found OpenSSL: /home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libcrypto.so (found version "3.6.5")
+[2.850s] -- Found FastRTPS: /home/stefano/work/my_ros2_project/.pixi/envs/default/include
+[2.897s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.006s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.529s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.530s] -- Looking for pthread_create in pthreads
+[3.622s] -- Looking for pthread_create in pthreads - not found
+[3.622s] -- Looking for pthread_create in pthread
+[3.698s] -- Looking for pthread_create in pthread - found
+[3.699s] -- Found Threads: TRUE
+[3.973s] -- Found std_msgs: 4.9.1 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/std_msgs/cmake)
+[4.022s] -- Found ament_lint_auto: 0.12.15 (/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_lint_auto/cmake)
+[4.304s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.305s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/stefano/work/my_ros2_project/src/my_cpp_package/include>
+[4.305s] -- Configured cppcheck exclude dirs and/or files: 
+[4.308s] -- Added test 'lint_cmake' to check CMake code style
+[4.312s] -- Added test 'uncrustify' to check C / C++ code style
+[4.313s] -- Configured uncrustify additional arguments: 
+[4.314s] -- Added test 'xmllint' to check XML markup files
+[4.316s] -- Configuring done (4.2s)
+[4.389s] -- Generating done (0.1s)
+[4.392s] -- Build files have been written to: /home/stefano/work/my_ros2_project/build/my_cpp_package
+[4.405s] Invoked command in '/home/stefano/work/my_ros2_project/build/my_cpp_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/work/my_ros2_project/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(my_ros2_project) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(my_ros2_project) PS1=(my_ros2_project) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cmake /home/stefano/work/my_ros2_project/src/my_cpp_package -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/stefano/work/my_ros2_project/install/my_cpp_package
+[4.407s] Invoking command in '/home/stefano/work/my_ros2_project/build/my_cpp_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/work/my_ros2_project/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(my_ros2_project) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(my_ros2_project) PS1=(my_ros2_project) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cmake --build /home/stefano/work/my_ros2_project/build/my_cpp_package -- -j4 -l4
+[4.419s] 
+[12.698s] [0/2] Building CXX object CMakeFiles/my_cpp_node.dir/src/my_cpp_node.cpp.o[K
+[12.699s] [1/2] Building CXX object CMakeFiles/my_cpp_node.dir/src/my_cpp_node.cpp.o[K
+[13.380s] [1/2] Linking CXX executable my_cpp_node[K
+[13.381s] [2/2] Linking CXX executable my_cpp_node[K
+[13.383s] Invoked command in '/home/stefano/work/my_ros2_project/build/my_cpp_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/work/my_ros2_project/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(my_ros2_project) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(my_ros2_project) PS1=(my_ros2_project) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cmake --build /home/stefano/work/my_ros2_project/build/my_cpp_package -- -j4 -l4
+[13.451s] Invoking command in '/home/stefano/work/my_ros2_project/build/my_cpp_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/work/my_ros2_project/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(my_ros2_project) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(my_ros2_project) PS1=(my_ros2_project) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cmake --install /home/stefano/work/my_ros2_project/build/my_cpp_package
+[13.459s] -- Install configuration: ""
+[13.459s] -- Execute custom install script
+[13.468s] -- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/lib/my_cpp_package/my_cpp_node
+[13.468s] -- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/ament_index/resource_index/package_run_dependencies/my_cpp_package
+[13.469s] -- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/ament_index/resource_index/parent_prefix_path/my_cpp_package
+[13.469s] -- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/environment/ament_prefix_path.sh
+[13.469s] -- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/environment/ament_prefix_path.dsv
+[13.470s] -- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/environment/path.sh
+[13.470s] -- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/environment/path.dsv
+[13.475s] -- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/local_setup.bash
+[13.478s] -- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/local_setup.sh
+[13.481s] -- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/local_setup.zsh
+[13.482s] -- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/local_setup.dsv
+[13.482s] -- Symlinking: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/package.dsv
+[13.492s] -- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/ament_index/resource_index/packages/my_cpp_package
+[13.502s] -- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/cmake/my_cpp_packageConfig.cmake
+[13.503s] -- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/cmake/my_cpp_packageConfig-version.cmake
+[13.504s] -- Up-to-date symlink: /home/stefano/work/my_ros2_project/install/my_cpp_package/share/my_cpp_package/package.xml
+[13.506s] Invoked command in '/home/stefano/work/my_ros2_project/build/my_cpp_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/work/my_ros2_project/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(my_ros2_project) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(my_ros2_project) PS1=(my_ros2_project) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cmake --install /home/stefano/work/my_ros2_project/build/my_cpp_package

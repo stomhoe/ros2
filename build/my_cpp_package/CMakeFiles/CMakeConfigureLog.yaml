@@ -1,0 +1,706 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.8.0-136-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/3.31.8/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/3.31.8/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-7gFYqr"
+      binary: "/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-7gFYqr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-7gFYqr'
+        
+        Run Build Command(s): /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/ninja -v cmTC_ad119
+        [1/2] /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc   -v -o CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o -c /home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/specs
+        Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/conda.specs
+        COLLECT_GCC=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-multiarch --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 15.3.0-7' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 15.3.0 (conda-forge gcc 15.3.0-7) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ad119.dir/'
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu -iprefix /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/ -isysroot /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot /home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ad119.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -isystem /home/stefano/work/my_ros2_project/.pixi/envs/default/include -o /tmp/ccg8agKq.s
+        GNU C23 (conda-forge gcc 15.3.0-7) version 15.3.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 16.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include"
+        ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed/x86_64-linux-gnu"
+        ignoring duplicate directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed"
+        ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/include/x86_64-linux-gnu"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/include
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        Compiler executable checksum: 04eb8b85d90958627c58d714513acd6a
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ad119.dir/'
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o /tmp/ccg8agKq.s
+        GNU assembler version 2.46.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.46.1
+        COMPILER_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc  -v -Wl,-v CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o -o cmTC_ad119   && :
+        Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/specs
+        Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/conda.specs
+        COLLECT_GCC=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc
+        COLLECT_LTO_WRAPPER=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-multiarch --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 15.3.0-7' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 15.3.0 (conda-forge gcc 15.3.0-7) 
+        COMPILER_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ad119' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ad119.'
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/collect2 -disable-new-dtags -plugin /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/liblto_plugin.so -plugin-opt=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccok4nRP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ad119 /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../.. -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o -rpath /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -rpath-link /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib
+        collect2 version 15.3.0
+        /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/ld -disable-new-dtags -plugin /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/liblto_plugin.so -plugin-opt=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccok4nRP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ad119 /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../.. -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o -rpath /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -rpath-link /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib
+        GNU ld (GNU Binutils) 2.46.1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ad119' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ad119.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/stefano/work/my_ros2_project/.pixi/envs/default/include]
+          add: [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include]
+          add: [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed]
+          add: [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/include] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/include]
+        collapse include dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include]
+        collapse include dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed]
+        collapse include dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/home/stefano/work/my_ros2_project/.pixi/envs/default/include;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-7gFYqr']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/ninja -v cmTC_ad119]
+        ignore line: [[1/2] /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc   -v -o CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o -c /home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/specs]
+        ignore line: [Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-multiarch --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 15.3.0-7' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 15.3.0 (conda-forge gcc 15.3.0-7) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ad119.dir/']
+        ignore line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu -iprefix /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/ -isysroot /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot /home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ad119.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -isystem /home/stefano/work/my_ros2_project/.pixi/envs/default/include -o /tmp/ccg8agKq.s]
+        ignore line: [GNU C23 (conda-forge gcc 15.3.0-7) version 15.3.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 16.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/include/x86_64-linux-gnu"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/include]
+        ignore line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include]
+        ignore line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed]
+        ignore line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 04eb8b85d90958627c58d714513acd6a]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ad119.dir/']
+        ignore line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o /tmp/ccg8agKq.s]
+        ignore line: [GNU assembler version 2.46.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.46.1]
+        ignore line: [COMPILER_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc  -v -Wl -v CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o -o cmTC_ad119   && :]
+        ignore line: [Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/specs]
+        ignore line: [Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-multiarch --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 15.3.0-7' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 15.3.0 (conda-forge gcc 15.3.0-7) ]
+        ignore line: [COMPILER_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ad119' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ad119.']
+        link line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/collect2 -disable-new-dtags -plugin /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/liblto_plugin.so -plugin-opt=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccok4nRP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ad119 /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../.. -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o -rpath /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -rpath-link /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib]
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/collect2] ==> ignore
+          arg [-disable-new-dtags] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccok4nRP.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_ad119] ==> ignore
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o] ==> obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o]
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o] ==> obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o]
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o] ==> obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../..] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../..]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o] ==> obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o]
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o] ==> obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o]
+          arg [-rpath] ==> ignore
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib] ==> ignore
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/lib] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib]
+        ignore line: [collect2 version 15.3.0]
+        ignore line: [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/ld -disable-new-dtags -plugin /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/liblto_plugin.so -plugin-opt=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccok4nRP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ad119 /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../.. -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_ad119.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o -rpath /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -rpath-link /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib]
+        linker tool for 'C': /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/ld
+        collapse obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64/Scrt1.o]
+        collapse obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64/crti.o]
+        collapse obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o]
+        collapse obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o]
+        collapse obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64/crtn.o]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/lib64]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../..] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64/Scrt1.o;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64/crti.o;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64/crtn.o]
+        implicit dirs: [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/lib64;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/lib;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/lib;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/ld" "-v"
+      GNU ld (GNU Binutils) 2.46.1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-eWGvjc"
+      binary: "/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-eWGvjc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-eWGvjc'
+        
+        Run Build Command(s): /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/ninja -v cmTC_210a0
+        [1/2] /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/c++   -v -o CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o -c /home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/specs
+        Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/conda.specs
+        COLLECT_GCC=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/c++
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-multiarch --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 15.3.0-7' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 15.3.0 (conda-forge gcc 15.3.0-7) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_210a0.dir/'
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -iprefix /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/ -isysroot /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE /home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_210a0.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -isystem /home/stefano/work/my_ros2_project/.pixi/envs/default/include -o /tmp/ccS4aUmd.s
+        GNU C++17 (conda-forge gcc 15.3.0-7) version 15.3.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 16.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++"
+        ignoring duplicate directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/x86_64-conda-linux-gnu"
+        ignoring duplicate directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/backward"
+        ignoring duplicate directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include"
+        ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed/x86_64-linux-gnu"
+        ignoring duplicate directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed"
+        ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/include/x86_64-linux-gnu"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/include
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/x86_64-conda-linux-gnu
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/backward
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        Compiler executable checksum: d55bbc33f786451680d63528debe9eb7
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_210a0.dir/'
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccS4aUmd.s
+        GNU assembler version 2.46.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.46.1
+        COMPILER_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/c++  -v -Wl,-v CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_210a0   && :
+        Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/specs
+        Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/conda.specs
+        COLLECT_GCC=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/c++
+        COLLECT_LTO_WRAPPER=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-multiarch --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 15.3.0-7' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 15.3.0 (conda-forge gcc 15.3.0-7) 
+        COMPILER_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_210a0' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_210a0.'
+         /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/collect2 -disable-new-dtags -plugin /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/liblto_plugin.so -plugin-opt=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cctPKxSu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_210a0 /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../.. -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o -rpath /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -rpath-link /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib
+        collect2 version 15.3.0
+        /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/ld -disable-new-dtags -plugin /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/liblto_plugin.so -plugin-opt=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cctPKxSu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_210a0 /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../.. -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o -rpath /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -rpath-link /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib
+        GNU ld (GNU Binutils) 2.46.1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_210a0' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_210a0.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/stefano/work/my_ros2_project/.pixi/envs/default/include]
+          add: [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++]
+          add: [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/x86_64-conda-linux-gnu]
+          add: [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/backward]
+          add: [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include]
+          add: [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed]
+          add: [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/include] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/include]
+        collapse include dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++]
+        collapse include dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/x86_64-conda-linux-gnu] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/x86_64-conda-linux-gnu]
+        collapse include dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/backward] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/backward]
+        collapse include dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include]
+        collapse include dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed]
+        collapse include dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/home/stefano/work/my_ros2_project/.pixi/envs/default/include;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/x86_64-conda-linux-gnu;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/backward;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-eWGvjc']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/ninja -v cmTC_210a0]
+        ignore line: [[1/2] /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/c++   -v -o CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o -c /home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/specs]
+        ignore line: [Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/c++]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-multiarch --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 15.3.0-7' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 15.3.0 (conda-forge gcc 15.3.0-7) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_210a0.dir/']
+        ignore line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -iprefix /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/ -isysroot /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE /home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_210a0.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -isystem /home/stefano/work/my_ros2_project/.pixi/envs/default/include -o /tmp/ccS4aUmd.s]
+        ignore line: [GNU C++17 (conda-forge gcc 15.3.0-7) version 15.3.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 16.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++"]
+        ignore line: [ignoring duplicate directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/x86_64-conda-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/include/x86_64-linux-gnu"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/include]
+        ignore line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++]
+        ignore line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/x86_64-conda-linux-gnu]
+        ignore line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++/backward]
+        ignore line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include]
+        ignore line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/include-fixed]
+        ignore line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: d55bbc33f786451680d63528debe9eb7]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_210a0.dir/']
+        ignore line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccS4aUmd.s]
+        ignore line: [GNU assembler version 2.46.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.46.1]
+        ignore line: [COMPILER_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/c++  -v -Wl -v CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_210a0   && :]
+        ignore line: [Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/specs]
+        ignore line: [Reading specs from /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-multiarch --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 15.3.0-7' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300745169/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 15.3.0 (conda-forge gcc 15.3.0-7) ]
+        ignore line: [COMPILER_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_210a0' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_210a0.']
+        link line: [ /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/collect2 -disable-new-dtags -plugin /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/liblto_plugin.so -plugin-opt=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cctPKxSu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_210a0 /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../.. -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o -rpath /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -rpath-link /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib]
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/collect2] ==> ignore
+          arg [-disable-new-dtags] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cctPKxSu.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_210a0] ==> ignore
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o] ==> obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o]
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o] ==> obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o]
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o] ==> obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../..] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../..]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o] ==> obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o]
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o] ==> obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o]
+          arg [-rpath] ==> ignore
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib] ==> ignore
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs]
+          arg [-L/home/stefano/work/my_ros2_project/.pixi/envs/default/lib] ==> dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib]
+        ignore line: [collect2 version 15.3.0]
+        ignore line: [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/ld -disable-new-dtags -plugin /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/liblto_plugin.so -plugin-opt=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cctPKxSu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_210a0 /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../.. -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_210a0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o -rpath /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -rpath-link /home/stefano/work/my_ros2_project/.pixi/envs/default/lib -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs -L /home/stefano/work/my_ros2_project/.pixi/envs/default/lib]
+        linker tool for 'CXX': /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/ld
+        collapse obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64/Scrt1.o]
+        collapse obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64/crti.o]
+        collapse obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o]
+        collapse obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o]
+        collapse obj [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64/crtn.o]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/lib64]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../lib/gcc/x86_64-conda-linux-gnu/15.3.0/../../..] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs]
+        collapse library dir [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib] ==> [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64/Scrt1.o;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64/crti.o;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtbeginS.o;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0/crtendS.o;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64/crtn.o]
+        implicit dirs: [/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc/x86_64-conda-linux-gnu/15.3.0;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/gcc;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/lib64;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib64;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/lib;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/lib;/home/stefano/work/my_ros2_project/.pixi/envs/default/x86_64-conda-linux-gnu/sysroot/usr/lib;/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/stubs]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.3.0/ld" "-v"
+      GNU ld (GNU Binutils) 2.46.1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/cmake/spdlog/spdlogConfig.cmake:30 (find_package)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rcl_logging_spdlog/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rcl_logging_spdlog/cmake/rcl_logging_spdlogConfig.cmake:41 (include)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rcl/cmake/rclConfig.cmake:41 (include)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)"
+      - "CMakeLists.txt:10 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-EwYXgd"
+      binary: "/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-EwYXgd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/libyaml_vendor/cmake/Modules;/home/stefano/work/my_ros2_project/.pixi/envs/default/share/fastrtps_cmake_module/cmake/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-EwYXgd'
+        
+        Run Build Command(s): /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/ninja -v cmTC_15ba5
+        [1/2] /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_15ba5.dir/src.c.o -c /home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-EwYXgd/src.c
+        [2/2] : && /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc   CMakeFiles/cmTC_15ba5.dir/src.c.o -o cmTC_15ba5   && :
+        FAILED: [code=1] cmTC_15ba5 
+        : && /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc   CMakeFiles/cmTC_15ba5.dir/src.c.o -o cmTC_15ba5   && :
+        /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/x86_64-conda-linux-gnu-ld: CMakeFiles/cmTC_15ba5.dir/src.c.o: in function `main':
+        src.c:(.text+0x2f): undefined reference to `pthread_create'
+        /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/x86_64-conda-linux-gnu-ld: src.c:(.text+0x3b): undefined reference to `pthread_detach'
+        /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/x86_64-conda-linux-gnu-ld: src.c:(.text+0x47): undefined reference to `pthread_cancel'
+        /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/x86_64-conda-linux-gnu-ld: src.c:(.text+0x58): undefined reference to `pthread_join'
+        collect2: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/cmake/spdlog/spdlogConfig.cmake:30 (find_package)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rcl_logging_spdlog/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rcl_logging_spdlog/cmake/rcl_logging_spdlogConfig.cmake:41 (include)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rcl/cmake/rclConfig.cmake:41 (include)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)"
+      - "CMakeLists.txt:10 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-kV3iIF"
+      binary: "/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-kV3iIF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/libyaml_vendor/cmake/Modules;/home/stefano/work/my_ros2_project/.pixi/envs/default/share/fastrtps_cmake_module/cmake/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-kV3iIF'
+        
+        Run Build Command(s): /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/ninja -v cmTC_770cc
+        [1/2] /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_770cc.dir/CheckFunctionExists.c.o -c /home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-kV3iIF/CheckFunctionExists.c
+        [2/2] : && /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_770cc.dir/CheckFunctionExists.c.o -o cmTC_770cc  -lpthreads && :
+        FAILED: [code=1] cmTC_770cc 
+        : && /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_770cc.dir/CheckFunctionExists.c.o -o cmTC_770cc  -lpthreads && :
+        /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/x86_64-conda-linux-gnu-ld: cannot find -lpthreads: No such file or directory
+        collect2: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/cmake-3.31/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/cmake/spdlog/spdlogConfig.cmake:30 (find_package)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rcl_logging_spdlog/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rcl_logging_spdlog/cmake/rcl_logging_spdlogConfig.cmake:41 (include)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rcl/cmake/rclConfig.cmake:41 (include)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)"
+      - "CMakeLists.txt:10 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-CpSBw0"
+      binary: "/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-CpSBw0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/libyaml_vendor/cmake/Modules;/home/stefano/work/my_ros2_project/.pixi/envs/default/share/fastrtps_cmake_module/cmake/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-CpSBw0'
+        
+        Run Build Command(s): /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/ninja -v cmTC_ff60f
+        [1/2] /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_ff60f.dir/CheckFunctionExists.c.o -c /home/stefano/work/my_ros2_project/build/my_cpp_package/CMakeFiles/CMakeScratch/TryCompile-CpSBw0/CheckFunctionExists.c
+        [2/2] : && /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_ff60f.dir/CheckFunctionExists.c.o -o cmTC_ff60f  -lpthread && :
+        
+      exitCode: 0
+...

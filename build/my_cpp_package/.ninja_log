@@ -1,0 +1,5 @@
+# ninja log v7
+1	222	1791898450346177728	CMakeFiles/my_cpp_node.dir/src/my_cpp_node.cpp.o	7feba68eae13c13d
+222	287	1791898450567177431	my_cpp_node	29f8986bc41998bd
+2	8281	1791903653587091517	CMakeFiles/my_cpp_node.dir/src/my_cpp_node.cpp.o	50cd41837bfbcd9d
+8282	8964	1791903661866977111	my_cpp_node	5b8b56229aabdb14

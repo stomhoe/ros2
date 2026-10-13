@@ -1,0 +1,1 @@
+/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh
