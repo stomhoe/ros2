@@ -19,7 +19,6 @@
 			"set_property",
 			"_pkg_create_imp_target",
 			"_pkg_recalculate",
-			"_pkg_check_modules_internal",
 			"pkg_check_modules",
 			"add_compile_options",
 			"target_include_directories"
@@ -44,6 +43,15 @@
 			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rcl_yaml_param_parser/cmake/ament_cmake_export_dependencies-extras.cmake",
 			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rcl_yaml_param_parser/cmake/rcl_yaml_param_parserConfig.cmake",
 			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/rcl/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/turtlesim/cmake/export_turtlesim__rosidl_typesupport_fastrtps_cExport.cmake",
+			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/turtlesim/cmake/ament_cmake_export_targets-extras.cmake",
+			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/turtlesim/cmake/turtlesimConfig.cmake",
+			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/turtlesim/cmake/export_turtlesim__rosidl_typesupport_fastrtps_cppExport.cmake",
+			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cExport.cmake",
+			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cExport.cmake",
+			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/turtlesim/cmake/export_turtlesim__rosidl_generator_cExport.cmake",
+			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cppExport.cmake",
+			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cppExport.cmake",
 			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/std_msgs/cmake/export_std_msgs__rosidl_typesupport_fastrtps_cExport.cmake",
 			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/std_msgs/cmake/ament_cmake_export_targets-extras.cmake",
 			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/std_msgs/cmake/std_msgsConfig.cmake",
@@ -70,13 +78,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 13,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 14,
+				"line" : 16,
 				"parent" : 0
 			},
 			{
@@ -248,34 +256,160 @@
 				"parent" : 34
 			},
 			{
-				"command" : 10,
+				"command" : 9,
 				"file" : 12,
 				"line" : 24,
 				"parent" : 35
 			},
 			{
-				"command" : 9,
-				"file" : 11,
-				"line" : 873,
-				"parent" : 36
-			},
-			{
 				"command" : 8,
 				"file" : 11,
-				"line" : 701,
-				"parent" : 37
+				"line" : 881,
+				"parent" : 36
 			},
 			{
 				"command" : 7,
 				"file" : 11,
 				"line" : 365,
-				"parent" : 38
+				"parent" : 37
 			},
 			{
 				"command" : 6,
 				"file" : 11,
 				"line" : 346,
-				"parent" : 39
+				"parent" : 38
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"file" : 20,
+				"parent" : 40
+			},
+			{
+				"command" : 4,
+				"file" : 20,
+				"line" : 41,
+				"parent" : 41
+			},
+			{
+				"file" : 19,
+				"parent" : 42
+			},
+			{
+				"command" : 4,
+				"file" : 19,
+				"line" : 9,
+				"parent" : 43
+			},
+			{
+				"file" : 18,
+				"parent" : 44
+			},
+			{
+				"command" : 3,
+				"file" : 18,
+				"line" : 61,
+				"parent" : 45
+			},
+			{
+				"command" : 4,
+				"file" : 19,
+				"line" : 9,
+				"parent" : 43
+			},
+			{
+				"file" : 21,
+				"parent" : 47
+			},
+			{
+				"command" : 3,
+				"file" : 21,
+				"line" : 61,
+				"parent" : 48
+			},
+			{
+				"command" : 4,
+				"file" : 19,
+				"line" : 9,
+				"parent" : 43
+			},
+			{
+				"file" : 22,
+				"parent" : 50
+			},
+			{
+				"command" : 3,
+				"file" : 22,
+				"line" : 61,
+				"parent" : 51
+			},
+			{
+				"command" : 4,
+				"file" : 19,
+				"line" : 9,
+				"parent" : 43
+			},
+			{
+				"file" : 23,
+				"parent" : 53
+			},
+			{
+				"command" : 3,
+				"file" : 23,
+				"line" : 61,
+				"parent" : 54
+			},
+			{
+				"command" : 4,
+				"file" : 19,
+				"line" : 9,
+				"parent" : 43
+			},
+			{
+				"file" : 24,
+				"parent" : 56
+			},
+			{
+				"command" : 3,
+				"file" : 24,
+				"line" : 61,
+				"parent" : 57
+			},
+			{
+				"command" : 4,
+				"file" : 19,
+				"line" : 9,
+				"parent" : 43
+			},
+			{
+				"file" : 25,
+				"parent" : 59
+			},
+			{
+				"command" : 3,
+				"file" : 25,
+				"line" : 61,
+				"parent" : 60
+			},
+			{
+				"command" : 4,
+				"file" : 19,
+				"line" : 9,
+				"parent" : 43
+			},
+			{
+				"file" : 26,
+				"parent" : 62
+			},
+			{
+				"command" : 3,
+				"file" : 26,
+				"line" : 61,
+				"parent" : 63
 			},
 			{
 				"command" : 5,
@@ -284,82 +418,82 @@
 				"parent" : 0
 			},
 			{
-				"file" : 20,
-				"parent" : 41
+				"file" : 29,
+				"parent" : 65
 			},
 			{
 				"command" : 4,
-				"file" : 20,
+				"file" : 29,
 				"line" : 41,
-				"parent" : 42
+				"parent" : 66
 			},
 			{
-				"file" : 19,
-				"parent" : 43
-			},
-			{
-				"command" : 4,
-				"file" : 19,
-				"line" : 9,
-				"parent" : 44
-			},
-			{
-				"file" : 18,
-				"parent" : 45
-			},
-			{
-				"command" : 3,
-				"file" : 18,
-				"line" : 61,
-				"parent" : 46
+				"file" : 28,
+				"parent" : 67
 			},
 			{
 				"command" : 4,
-				"file" : 19,
+				"file" : 28,
 				"line" : 9,
-				"parent" : 44
+				"parent" : 68
 			},
 			{
-				"file" : 21,
-				"parent" : 48
+				"file" : 27,
+				"parent" : 69
 			},
 			{
 				"command" : 3,
-				"file" : 21,
+				"file" : 27,
 				"line" : 61,
-				"parent" : 49
+				"parent" : 70
 			},
 			{
 				"command" : 4,
-				"file" : 19,
+				"file" : 28,
 				"line" : 9,
-				"parent" : 44
+				"parent" : 68
 			},
 			{
-				"file" : 22,
-				"parent" : 51
+				"file" : 30,
+				"parent" : 72
 			},
 			{
 				"command" : 3,
-				"file" : 22,
+				"file" : 30,
 				"line" : 61,
-				"parent" : 52
+				"parent" : 73
 			},
 			{
 				"command" : 4,
-				"file" : 19,
+				"file" : 28,
 				"line" : 9,
-				"parent" : 44
+				"parent" : 68
 			},
 			{
-				"file" : 23,
-				"parent" : 54
+				"file" : 31,
+				"parent" : 75
 			},
 			{
 				"command" : 3,
-				"file" : 23,
+				"file" : 31,
 				"line" : 61,
-				"parent" : 55
+				"parent" : 76
+			},
+			{
+				"command" : 4,
+				"file" : 28,
+				"line" : 9,
+				"parent" : 68
+			},
+			{
+				"file" : 32,
+				"parent" : 78
+			},
+			{
+				"command" : 3,
+				"file" : 32,
+				"line" : 61,
+				"parent" : 79
 			},
 			{
 				"command" : 5,
@@ -368,141 +502,141 @@
 				"parent" : 16
 			},
 			{
-				"file" : 28,
-				"parent" : 57
+				"file" : 37,
+				"parent" : 81
 			},
 			{
 				"command" : 4,
-				"file" : 28,
+				"file" : 37,
 				"line" : 41,
-				"parent" : 58
+				"parent" : 82
 			},
 			{
-				"file" : 27,
-				"parent" : 59
+				"file" : 36,
+				"parent" : 83
 			},
 			{
 				"command" : 5,
-				"file" : 27,
+				"file" : 36,
 				"line" : 21,
-				"parent" : 60
+				"parent" : 84
 			},
 			{
-				"file" : 26,
-				"parent" : 61
+				"file" : 35,
+				"parent" : 85
 			},
 			{
 				"command" : 4,
-				"file" : 26,
+				"file" : 35,
 				"line" : 41,
-				"parent" : 62
+				"parent" : 86
 			},
 			{
-				"file" : 25,
-				"parent" : 63
+				"file" : 34,
+				"parent" : 87
 			},
 			{
 				"command" : 4,
-				"file" : 25,
+				"file" : 34,
 				"line" : 9,
-				"parent" : 64
+				"parent" : 88
 			},
 			{
-				"file" : 24,
-				"parent" : 65
+				"file" : 33,
+				"parent" : 89
 			},
 			{
 				"command" : 3,
-				"file" : 24,
+				"file" : 33,
 				"line" : 61,
-				"parent" : 66
+				"parent" : 90
 			},
 			{
 				"command" : 4,
-				"file" : 19,
+				"file" : 28,
 				"line" : 9,
-				"parent" : 44
-			},
-			{
-				"file" : 29,
 				"parent" : 68
 			},
 			{
+				"file" : 38,
+				"parent" : 92
+			},
+			{
 				"command" : 3,
-				"file" : 29,
+				"file" : 38,
 				"line" : 61,
-				"parent" : 69
+				"parent" : 93
 			},
 			{
 				"command" : 5,
-				"file" : 27,
+				"file" : 36,
 				"line" : 21,
-				"parent" : 60
+				"parent" : 84
 			},
 			{
-				"file" : 34,
-				"parent" : 71
+				"file" : 43,
+				"parent" : 95
 			},
 			{
 				"command" : 4,
-				"file" : 34,
+				"file" : 43,
 				"line" : 41,
-				"parent" : 72
+				"parent" : 96
 			},
 			{
-				"file" : 33,
-				"parent" : 73
+				"file" : 42,
+				"parent" : 97
 			},
 			{
 				"command" : 5,
-				"file" : 33,
+				"file" : 42,
 				"line" : 21,
-				"parent" : 74
+				"parent" : 98
 			},
 			{
-				"file" : 32,
-				"parent" : 75
+				"file" : 41,
+				"parent" : 99
 			},
 			{
 				"command" : 4,
-				"file" : 32,
+				"file" : 41,
 				"line" : 41,
-				"parent" : 76
+				"parent" : 100
 			},
 			{
-				"file" : 31,
-				"parent" : 77
+				"file" : 40,
+				"parent" : 101
 			},
 			{
 				"command" : 4,
-				"file" : 31,
+				"file" : 40,
 				"line" : 9,
-				"parent" : 78
+				"parent" : 102
 			},
 			{
-				"file" : 30,
-				"parent" : 79
+				"file" : 39,
+				"parent" : 103
 			},
 			{
 				"command" : 3,
-				"file" : 30,
+				"file" : 39,
 				"line" : 61,
-				"parent" : 80
+				"parent" : 104
 			},
 			{
-				"command" : 11,
+				"command" : 10,
 				"file" : 0,
 				"line" : 5,
 				"parent" : 0
 			},
 			{
-				"command" : 12,
+				"command" : 11,
 				"file" : 0,
-				"line" : 17,
+				"line" : 19,
 				"parent" : 0
 			},
 			{
-				"command" : 12,
+				"command" : 11,
 				"file" : 1,
 				"line" : 141,
 				"parent" : 2
@@ -515,15 +649,15 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"backtrace" : 82,
+					"backtrace" : 106,
 					"fragment" : "-Wall"
 				},
 				{
-					"backtrace" : 82,
+					"backtrace" : 106,
 					"fragment" : "-Wextra"
 				},
 				{
-					"backtrace" : 82,
+					"backtrace" : 106,
 					"fragment" : "-Wpedantic"
 				}
 			],
@@ -541,18 +675,28 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 83,
+					"backtrace" : 107,
 					"path" : "/home/stefano/work/my_ros2_project/src/my_cpp_package/include"
 				},
 				{
-					"backtrace" : 84,
+					"backtrace" : 108,
 					"isSystem" : true,
 					"path" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/include/rclcpp"
 				},
 				{
-					"backtrace" : 84,
+					"backtrace" : 108,
 					"isSystem" : true,
 					"path" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/include/std_msgs"
+				},
+				{
+					"backtrace" : 108,
+					"isSystem" : true,
+					"path" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/include/turtlesim"
+				},
+				{
+					"backtrace" : 108,
+					"isSystem" : true,
+					"path" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/include/geometry_msgs"
 				},
 				{
 					"backtrace" : 3,
@@ -663,6 +807,16 @@
 					"backtrace" : 3,
 					"isSystem" : true,
 					"path" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/include/rosidl_typesupport_c"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/include/action_msgs"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/include/unique_identifier_msgs"
 				}
 			],
 			"language" : "CXX",
@@ -688,32 +842,62 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so",
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libturtlesim__rosidl_typesupport_fastrtps_c.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libturtlesim__rosidl_typesupport_fastrtps_cpp.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libstd_msgs__rosidl_typesupport_introspection_c.so",
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libturtlesim__rosidl_typesupport_introspection_c.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libstd_msgs__rosidl_typesupport_c.so",
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libturtlesim__rosidl_typesupport_c.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so",
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libturtlesim__rosidl_typesupport_introspection_cpp.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libstd_msgs__rosidl_typesupport_cpp.so",
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libturtlesim__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libgeometry_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libgeometry_msgs__rosidl_typesupport_cpp.so",
 				"role" : "libraries"
 			},
 			{
@@ -792,7 +976,7 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 40,
+				"backtrace" : 39,
 				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libyaml.so",
 				"role" : "libraries"
 			},
@@ -872,38 +1056,113 @@
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 46,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 46,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 52,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libaction_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 52,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libturtlesim__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 55,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libaction_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 58,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libaction_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 55,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libunique_identifier_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 58,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libunique_identifier_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 61,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 61,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 64,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libaction_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 64,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 10,
 				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 47,
+				"backtrace" : 71,
 				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/librosidl_typesupport_fastrtps_c.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 10,
-				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 47,
-				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/librosidl_typesupport_fastrtps_cpp.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 47,
-				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libfastcdr.so.1.0.29",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 50,
-				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/librmw.so",
+				"backtrace" : 3,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libstd_msgs__rosidl_typesupport_introspection_c.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 10,
 				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libstd_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libgeometry_msgs__rosidl_generator_c.so",
 				"role" : "libraries"
 			},
 			{
@@ -922,18 +1181,53 @@
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 3,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 71,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/librosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 71,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libfastcdr.so.1.0.29",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 74,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/librmw.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 10,
 				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 53,
+				"backtrace" : 77,
 				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/librosidl_typesupport_introspection_cpp.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 56,
+				"backtrace" : 80,
 				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/librosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libstd_msgs__rosidl_typesupport_cpp.so",
 				"role" : "libraries"
 			},
 			{
@@ -947,7 +1241,7 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 67,
+				"backtrace" : 91,
 				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/librosidl_typesupport_c.so",
 				"role" : "libraries"
 			},
@@ -957,7 +1251,7 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 70,
+				"backtrace" : 94,
 				"fragment" : "/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/librosidl_runtime_c.so",
 				"role" : "libraries"
 			},
@@ -967,17 +1261,17 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 81,
+				"backtrace" : 105,
 				"fragment" : "-ldl",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 81,
+				"backtrace" : 105,
 				"fragment" : "-latomic",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 81,
+				"backtrace" : 105,
 				"fragment" : "-lrt",
 				"role" : "libraries"
 			}

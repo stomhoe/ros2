@@ -9,9 +9,11 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(turtlesim REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 add_executable(my_cpp_node src/my_cpp_node.cpp)
-ament_target_dependencies(my_cpp_node rclcpp std_msgs)
+ament_target_dependencies(my_cpp_node rclcpp std_msgs turtlesim geometry_msgs)
 
 
 target_include_directories(my_cpp_node PUBLIC

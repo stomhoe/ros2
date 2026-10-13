@@ -278,7 +278,10 @@ SITE:STRING=colchoneros
 TinyXML2_DIR:PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/cmake/tinyxml2
 
 //Path to a library.
-_lib:FILEPATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
+
+//The directory containing a CMake configuration file for action_msgs.
+action_msgs_DIR:PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/share/action_msgs/cmake
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake/cmake
@@ -384,6 +387,9 @@ fmt_DIR:PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/cmake/fmt
 
 //The directory containing a CMake configuration file for foonathan_memory.
 foonathan_memory_DIR:PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/lib/foonathan_memory/cmake
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/share/geometry_msgs/cmake
 
 //The directory containing a CMake configuration file for libstatistics_collector.
 libstatistics_collector_DIR:PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/share/libstatistics_collector/cmake
@@ -510,6 +516,12 @@ std_msgs_DIR:PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/share/st
 
 //The directory containing a CMake configuration file for tracetools.
 tracetools_DIR:PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/share/tracetools/cmake
+
+//The directory containing a CMake configuration file for turtlesim.
+turtlesim_DIR:PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/share/turtlesim/cmake
+
+//The directory containing a CMake configuration file for unique_identifier_msgs.
+unique_identifier_msgs_DIR:PATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/share/unique_identifier_msgs/cmake
 
 //Path to a program.
 xmllint_BIN:FILEPATH=/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/xmllint
