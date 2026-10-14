@@ -1,1 +1,1 @@
-/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh
+/home/stefan/ros2/.pixi/envs/default/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh

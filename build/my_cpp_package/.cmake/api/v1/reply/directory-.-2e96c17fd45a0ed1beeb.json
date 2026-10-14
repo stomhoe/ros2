@@ -10,11 +10,11 @@
 		],
 		"files" : 
 		[
-			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake_core/cmake/symlink_install/install.cmake",
-			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake_core/cmake/ament_cmake_symlink_install-extras.cmake",
-			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake",
-			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake",
-			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake/cmake/ament_cmakeConfig.cmake",
+			"/home/stefan/ros2/.pixi/envs/default/share/ament_cmake_core/cmake/symlink_install/install.cmake",
+			"/home/stefan/ros2/.pixi/envs/default/share/ament_cmake_core/cmake/ament_cmake_symlink_install-extras.cmake",
+			"/home/stefan/ros2/.pixi/envs/default/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake",
+			"/home/stefan/ros2/.pixi/envs/default/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/stefan/ros2/.pixi/envs/default/share/ament_cmake/cmake/ament_cmakeConfig.cmake",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -81,7 +81,7 @@
 		{
 			"backtrace" : 10,
 			"component" : "Unspecified",
-			"scriptFile" : "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake",
+			"scriptFile" : "/home/stefan/ros2/build/my_cpp_package/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake",
 			"type" : "script"
 		}
 	],

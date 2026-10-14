@@ -1,1 +1,1 @@
-/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_core/my_cpp_packageConfig.cmake
+/home/stefan/ros2/build/my_cpp_package/ament_cmake_core/my_cpp_packageConfig.cmake

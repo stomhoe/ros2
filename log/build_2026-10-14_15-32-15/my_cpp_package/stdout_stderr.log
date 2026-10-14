@@ -1,0 +1,3 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/stefan/ros2/build/my_cpp_package/CMakeCache.txt is different than the directory /home/stefano/work/my_ros2_project/build/my_cpp_package where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+no such file or directory
+[0mCMake Error: Generator: execution of make failed. Make command was: /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/ninja -j32 -l32[0m

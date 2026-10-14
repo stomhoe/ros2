@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/stefano/work/my_ros2_project/install/my_cpp_package/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/stefan/ros2/install/my_cpp_package/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -128,7 +128,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/stefano/work/my_ros2_project/install/my_cpp_package/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/stefan/ros2/install/my_cpp_package/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +186,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/stefano/work/my_ros2_project/install/my_cpp_package/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/stefan/ros2/install/my_cpp_package/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +256,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/stefano/work/my_ros2_project/install/my_cpp_package/${destination}")
+      set(destination "/home/stefan/ros2/install/my_cpp_package/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -297,7 +297,7 @@ function(_ament_cmake_symlink_install_create_symlink absolute_file symlink)
   endif()
 
   execute_process(
-    COMMAND "/home/stefano/work/my_ros2_project/.pixi/envs/default/bin/cmake" "-E" "create_symlink"
+    COMMAND "/home/stefan/ros2/.pixi/envs/default/bin/cmake" "-E" "create_symlink"
       "${absolute_file}"
       "${symlink}"
   )
@@ -316,46 +316,46 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "my_cpp_node" "DESTINATION" "lib/my_cpp_package")
-include("/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/stefan/ros2/build/my_cpp_package/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_cpp_package" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/stefano/work/my_ros2_project/src/my_cpp_package" FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_cpp_package" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_cpp_package" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/stefan/ros2/src/my_cpp_package" FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_cpp_package" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/my_cpp_package" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/stefano/work/my_ros2_project/src/my_cpp_package" FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/my_cpp_package" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/my_cpp_package" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/stefan/ros2/src/my_cpp_package" FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/my_cpp_package" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/my_cpp_package/environment")
-ament_cmake_symlink_install_files("/home/stefano/work/my_ros2_project/src/my_cpp_package" FILES "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/my_cpp_package/environment")
+# install(FILES "/home/stefan/ros2/.pixi/envs/default/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/my_cpp_package/environment")
+ament_cmake_symlink_install_files("/home/stefan/ros2/src/my_cpp_package" FILES "/home/stefan/ros2/.pixi/envs/default/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/my_cpp_package/environment")
 
-# install(FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/my_cpp_package/environment")
-ament_cmake_symlink_install_files("/home/stefano/work/my_ros2_project/src/my_cpp_package" FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/my_cpp_package/environment")
+# install(FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/my_cpp_package/environment")
+ament_cmake_symlink_install_files("/home/stefan/ros2/src/my_cpp_package" FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/my_cpp_package/environment")
 
-# install(FILES "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/my_cpp_package/environment")
-ament_cmake_symlink_install_files("/home/stefano/work/my_ros2_project/src/my_cpp_package" FILES "/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/my_cpp_package/environment")
+# install(FILES "/home/stefan/ros2/.pixi/envs/default/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/my_cpp_package/environment")
+ament_cmake_symlink_install_files("/home/stefan/ros2/src/my_cpp_package" FILES "/home/stefan/ros2/.pixi/envs/default/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/my_cpp_package/environment")
 
-# install(FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/my_cpp_package/environment")
-ament_cmake_symlink_install_files("/home/stefano/work/my_ros2_project/src/my_cpp_package" FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/my_cpp_package/environment")
+# install(FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/my_cpp_package/environment")
+ament_cmake_symlink_install_files("/home/stefan/ros2/src/my_cpp_package" FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/my_cpp_package/environment")
 
-# install(FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/my_cpp_package")
-ament_cmake_symlink_install_files("/home/stefano/work/my_ros2_project/src/my_cpp_package" FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/my_cpp_package")
+# install(FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/my_cpp_package")
+ament_cmake_symlink_install_files("/home/stefan/ros2/src/my_cpp_package" FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/my_cpp_package")
 
-# install(FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/my_cpp_package")
-ament_cmake_symlink_install_files("/home/stefano/work/my_ros2_project/src/my_cpp_package" FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/my_cpp_package")
+# install(FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/my_cpp_package")
+ament_cmake_symlink_install_files("/home/stefan/ros2/src/my_cpp_package" FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/my_cpp_package")
 
-# install(FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/my_cpp_package")
-ament_cmake_symlink_install_files("/home/stefano/work/my_ros2_project/src/my_cpp_package" FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/my_cpp_package")
+# install(FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/my_cpp_package")
+ament_cmake_symlink_install_files("/home/stefan/ros2/src/my_cpp_package" FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/my_cpp_package")
 
-# install(FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/my_cpp_package")
-ament_cmake_symlink_install_files("/home/stefano/work/my_ros2_project/src/my_cpp_package" FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/my_cpp_package")
+# install(FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/my_cpp_package")
+ament_cmake_symlink_install_files("/home/stefan/ros2/src/my_cpp_package" FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/my_cpp_package")
 
-# install(FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/my_cpp_package")
-ament_cmake_symlink_install_files("/home/stefano/work/my_ros2_project/src/my_cpp_package" FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/my_cpp_package")
+# install(FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/my_cpp_package")
+ament_cmake_symlink_install_files("/home/stefan/ros2/src/my_cpp_package" FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/my_cpp_package")
 
-# install(FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_index/share/ament_index/resource_index/packages/my_cpp_package" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/stefano/work/my_ros2_project/src/my_cpp_package" FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_index/share/ament_index/resource_index/packages/my_cpp_package" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_index/share/ament_index/resource_index/packages/my_cpp_package" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/stefan/ros2/src/my_cpp_package" FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_index/share/ament_index/resource_index/packages/my_cpp_package" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_core/my_cpp_packageConfig.cmake" "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_core/my_cpp_packageConfig-version.cmake" "DESTINATION" "share/my_cpp_package/cmake")
-ament_cmake_symlink_install_files("/home/stefano/work/my_ros2_project/src/my_cpp_package" FILES "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_core/my_cpp_packageConfig.cmake" "/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_core/my_cpp_packageConfig-version.cmake" "DESTINATION" "share/my_cpp_package/cmake")
+# install(FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_core/my_cpp_packageConfig.cmake" "/home/stefan/ros2/build/my_cpp_package/ament_cmake_core/my_cpp_packageConfig-version.cmake" "DESTINATION" "share/my_cpp_package/cmake")
+ament_cmake_symlink_install_files("/home/stefan/ros2/src/my_cpp_package" FILES "/home/stefan/ros2/build/my_cpp_package/ament_cmake_core/my_cpp_packageConfig.cmake" "/home/stefan/ros2/build/my_cpp_package/ament_cmake_core/my_cpp_packageConfig-version.cmake" "DESTINATION" "share/my_cpp_package/cmake")
 
-# install(FILES "/home/stefano/work/my_ros2_project/src/my_cpp_package/package.xml" "DESTINATION" "share/my_cpp_package")
-ament_cmake_symlink_install_files("/home/stefano/work/my_ros2_project/src/my_cpp_package" FILES "/home/stefano/work/my_ros2_project/src/my_cpp_package/package.xml" "DESTINATION" "share/my_cpp_package")
+# install(FILES "/home/stefan/ros2/src/my_cpp_package/package.xml" "DESTINATION" "share/my_cpp_package")
+ament_cmake_symlink_install_files("/home/stefan/ros2/src/my_cpp_package" FILES "/home/stefan/ros2/src/my_cpp_package/package.xml" "DESTINATION" "share/my_cpp_package")

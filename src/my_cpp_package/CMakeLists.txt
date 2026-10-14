@@ -8,13 +8,14 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
-find_package(turtlesim REQUIRED)
-find_package(geometry_msgs REQUIRED)
+find_package(visualization_msgs REQUIRED)
 
 add_executable(my_cpp_node src/my_cpp_node.cpp)
-ament_target_dependencies(my_cpp_node rclcpp std_msgs turtlesim geometry_msgs)
+ament_target_dependencies(my_cpp_node rclcpp visualization_msgs)
 
+add_executable(rviz_topic_demo src/rviz_topic_demo.cpp)
+ament_target_dependencies(rviz_topic_demo rclcpp visualization_msgs)
+target_compile_features(rviz_topic_demo PRIVATE cxx_std_17)
 
 target_include_directories(my_cpp_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -22,6 +23,8 @@ target_include_directories(my_cpp_node PUBLIC
 target_compile_features(my_cpp_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
 install(TARGETS my_cpp_node
+  DESTINATION lib/${PROJECT_NAME})
+install(TARGETS rviz_topic_demo
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

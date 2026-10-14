@@ -1,8 +1,8 @@
-# Install script for directory: /home/stefano/work/my_ros2_project/src/my_cpp_package
+# Install script for directory: /home/stefan/ros2/src/my_cpp_package
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/stefano/work/my_ros2_project/install/my_cpp_package")
+  set(CMAKE_INSTALL_PREFIX "/home/stefan/ros2/install/my_cpp_package")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,13 +43,13 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/stefano/work/my_ros2_project/build/my_cpp_package/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/stefan/ros2/build/my_cpp_package/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/stefano/work/my_ros2_project/build/my_cpp_package/install_local_manifest.txt"
+  file(WRITE "/home/stefan/ros2/build/my_cpp_package/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -65,6 +65,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/stefano/work/my_ros2_project/build/my_cpp_package/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/stefan/ros2/build/my_cpp_package/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

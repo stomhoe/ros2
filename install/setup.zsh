@@ -19,7 +19,7 @@ _colcon_prefix_chain_zsh_source_script() {
 
 # source chained prefixes
 # setting COLCON_CURRENT_PREFIX avoids determining the prefix in the sourced script
-COLCON_CURRENT_PREFIX="/home/stefano/work/my_ros2_project/.pixi/envs/default"
+COLCON_CURRENT_PREFIX="/home/stefan/ros2/.pixi/envs/default"
 _colcon_prefix_chain_zsh_source_script "$COLCON_CURRENT_PREFIX/local_setup.zsh"
 
 # source this prefix

@@ -1,0 +1,13 @@
+https://pixi.prefix.dev/latest/tutorials/ros2/#create-a-pixi-workspace
+
+https://docs.ros.org/en/humble/Tutorials.html
+
+https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html
+
+https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html
+
+https://github.com/stomhoe/ros2.git
+
+. install/local_setup.bash
+
+pixi shell

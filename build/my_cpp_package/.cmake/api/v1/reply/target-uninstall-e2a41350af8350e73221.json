@@ -11,10 +11,10 @@
 		],
 		"files" : 
 		[
-			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake_core/cmake/ament_cmake_uninstall_target-extras.cmake",
-			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake",
-			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake",
-			"/home/stefano/work/my_ros2_project/.pixi/envs/default/share/ament_cmake/cmake/ament_cmakeConfig.cmake",
+			"/home/stefan/ros2/.pixi/envs/default/share/ament_cmake_core/cmake/ament_cmake_uninstall_target-extras.cmake",
+			"/home/stefan/ros2/.pixi/envs/default/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake",
+			"/home/stefan/ros2/.pixi/envs/default/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/home/stefan/ros2/.pixi/envs/default/share/ament_cmake/cmake/ament_cmakeConfig.cmake",
 			"CMakeLists.txt"
 		],
 		"nodes" : 

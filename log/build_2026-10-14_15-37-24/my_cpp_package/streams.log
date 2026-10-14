@@ -1,0 +1,85 @@
+[0.010s] Invoking command in '/home/stefan/ros2/build/my_cpp_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefan/ros2/.pixi/envs/default DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(my_ros2_project) /home/stefan/ros2/.pixi/envs/default/bin/cmake /home/stefan/ros2/src/my_cpp_package -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/stefan/ros2/install/my_cpp_package
+[0.015s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.015s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.015s]   CMake.
+[0.015s] 
+[0.015s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.015s]   to tell CMake that the project requires at least <min> but has been updated
+[0.015s]   to work with policies introduced by <max> or earlier.
+[0.015s] 
+[0.015s] [0m
+[0.055s] -- The C compiler identification is GNU 15.3.0
+[0.123s] -- The CXX compiler identification is GNU 15.3.0
+[0.129s] -- Detecting C compiler ABI info
+[0.186s] -- Detecting C compiler ABI info - done
+[0.200s] -- Check for working C compiler: /home/stefan/ros2/.pixi/envs/default/bin/cc - skipped
+[0.200s] -- Detecting C compile features
+[0.201s] -- Detecting C compile features - done
+[0.210s] -- Detecting CXX compiler ABI info
+[0.289s] -- Detecting CXX compiler ABI info - done
+[0.304s] -- Check for working CXX compiler: /home/stefan/ros2/.pixi/envs/default/bin/c++ - skipped
+[0.304s] -- Detecting CXX compile features
+[0.305s] -- Detecting CXX compile features - done
+[0.315s] -- Found ament_cmake: 1.3.14 (/home/stefan/ros2/.pixi/envs/default/share/ament_cmake/cmake)
+[0.414s] -- Found Python3: /home/stefan/ros2/.pixi/envs/default/bin/python3 (found version "3.14.8") found components: Interpreter
+[0.474s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.528s] -- Found rclcpp: 16.0.19 (/home/stefan/ros2/.pixi/envs/default/share/rclcpp/cmake)
+[0.593s] -- Found rosidl_generator_c: 3.1.8 (/home/stefan/ros2/.pixi/envs/default/share/rosidl_generator_c/cmake)
+[0.602s] -- Found rosidl_adapter: 3.1.8 (/home/stefan/ros2/.pixi/envs/default/share/rosidl_adapter/cmake)
+[0.614s] -- Found rosidl_generator_cpp: 3.1.8 (/home/stefan/ros2/.pixi/envs/default/share/rosidl_generator_cpp/cmake)
+[0.630s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.651s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.732s] -- Checking for module 'yaml-0.1'
+[0.830s] --   Found yaml-0.1, version 0.2.5
+[1.106s] -- Found rmw_implementation_cmake: 6.1.2 (/home/stefan/ros2/.pixi/envs/default/share/rmw_implementation_cmake/cmake)
+[1.111s] -- Found rmw_fastrtps_cpp: 6.2.10 (/home/stefan/ros2/.pixi/envs/default/share/rmw_fastrtps_cpp/cmake)
+[1.534s] -- Found OpenSSL: /home/stefan/ros2/.pixi/envs/default/lib/libcrypto.so (found version "3.6.5")
+[1.567s] -- Found FastRTPS: /home/stefan/ros2/.pixi/envs/default/include
+[1.622s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.633s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.694s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.695s] -- Looking for pthread_create in pthreads
+[1.742s] -- Looking for pthread_create in pthreads - not found
+[1.742s] -- Looking for pthread_create in pthread
+[1.799s] -- Looking for pthread_create in pthread - found
+[1.800s] -- Found Threads: TRUE
+[1.851s] -- Found std_msgs: 4.9.1 (/home/stefan/ros2/.pixi/envs/default/share/std_msgs/cmake)
+[1.867s] -- Found turtlesim: 1.4.3 (/home/stefan/ros2/.pixi/envs/default/share/turtlesim/cmake)
+[1.921s] -- Found geometry_msgs: 4.9.1 (/home/stefan/ros2/.pixi/envs/default/share/geometry_msgs/cmake)
+[1.939s] -- Found ament_lint_auto: 0.12.15 (/home/stefan/ros2/.pixi/envs/default/share/ament_lint_auto/cmake)
+[2.039s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.039s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/stefan/ros2/src/my_cpp_package/include>
+[2.039s] -- Configured cppcheck exclude dirs and/or files: 
+[2.040s] -- Added test 'lint_cmake' to check CMake code style
+[2.040s] -- Added test 'uncrustify' to check C / C++ code style
+[2.040s] -- Configured uncrustify additional arguments: 
+[2.041s] -- Added test 'xmllint' to check XML markup files
+[2.042s] -- Configuring done (2.0s)
+[2.051s] -- Generating done (0.0s)
+[2.053s] -- Build files have been written to: /home/stefan/ros2/build/my_cpp_package
+[2.061s] Invoked command in '/home/stefan/ros2/build/my_cpp_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefan/ros2/.pixi/envs/default DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(my_ros2_project) /home/stefan/ros2/.pixi/envs/default/bin/cmake /home/stefan/ros2/src/my_cpp_package -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/stefan/ros2/install/my_cpp_package
+[2.062s] Invoking command in '/home/stefan/ros2/build/my_cpp_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefan/ros2/.pixi/envs/default DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(my_ros2_project) /home/stefan/ros2/.pixi/envs/default/bin/cmake --build /home/stefan/ros2/build/my_cpp_package -- -j32 -l32
+[2.105s] [ 50%] [32mBuilding CXX object CMakeFiles/my_cpp_node.dir/src/my_cpp_node.cpp.o[0m
+[7.631s] [100%] [32m[1mLinking CXX executable my_cpp_node[0m
+[7.779s] [100%] Built target my_cpp_node
+[7.787s] Invoked command in '/home/stefan/ros2/build/my_cpp_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefan/ros2/.pixi/envs/default DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(my_ros2_project) /home/stefan/ros2/.pixi/envs/default/bin/cmake --build /home/stefan/ros2/build/my_cpp_package -- -j32 -l32
+[7.793s] Invoking command in '/home/stefan/ros2/build/my_cpp_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefan/ros2/.pixi/envs/default DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(my_ros2_project) /home/stefan/ros2/.pixi/envs/default/bin/cmake --install /home/stefan/ros2/build/my_cpp_package
+[7.797s] -- Install configuration: ""
+[7.798s] -- Execute custom install script
+[7.798s] -- Up-to-date symlink: /home/stefan/ros2/install/my_cpp_package/lib/my_cpp_package/my_cpp_node
+[7.798s] -- Up-to-date symlink: /home/stefan/ros2/install/my_cpp_package/share/ament_index/resource_index/package_run_dependencies/my_cpp_package
+[7.798s] -- Up-to-date symlink: /home/stefan/ros2/install/my_cpp_package/share/ament_index/resource_index/parent_prefix_path/my_cpp_package
+[7.798s] -- Up-to-date symlink: /home/stefan/ros2/install/my_cpp_package/share/my_cpp_package/environment/ament_prefix_path.sh
+[7.799s] -- Up-to-date symlink: /home/stefan/ros2/install/my_cpp_package/share/my_cpp_package/environment/ament_prefix_path.dsv
+[7.799s] -- Up-to-date symlink: /home/stefan/ros2/install/my_cpp_package/share/my_cpp_package/environment/path.sh
+[7.799s] -- Up-to-date symlink: /home/stefan/ros2/install/my_cpp_package/share/my_cpp_package/environment/path.dsv
+[7.799s] -- Up-to-date symlink: /home/stefan/ros2/install/my_cpp_package/share/my_cpp_package/local_setup.bash
+[7.799s] -- Up-to-date symlink: /home/stefan/ros2/install/my_cpp_package/share/my_cpp_package/local_setup.sh
+[7.799s] -- Up-to-date symlink: /home/stefan/ros2/install/my_cpp_package/share/my_cpp_package/local_setup.zsh
+[7.799s] -- Up-to-date symlink: /home/stefan/ros2/install/my_cpp_package/share/my_cpp_package/local_setup.dsv
+[7.799s] -- Symlinking: /home/stefan/ros2/install/my_cpp_package/share/my_cpp_package/package.dsv
+[7.804s] -- Up-to-date symlink: /home/stefan/ros2/install/my_cpp_package/share/ament_index/resource_index/packages/my_cpp_package
+[7.804s] -- Up-to-date symlink: /home/stefan/ros2/install/my_cpp_package/share/my_cpp_package/cmake/my_cpp_packageConfig.cmake
+[7.805s] -- Up-to-date symlink: /home/stefan/ros2/install/my_cpp_package/share/my_cpp_package/cmake/my_cpp_packageConfig-version.cmake
+[7.805s] -- Up-to-date symlink: /home/stefan/ros2/install/my_cpp_package/share/my_cpp_package/package.xml
+[7.806s] Invoked command in '/home/stefan/ros2/build/my_cpp_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefan/ros2/.pixi/envs/default DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(my_ros2_project) /home/stefan/ros2/.pixi/envs/default/bin/cmake --install /home/stefan/ros2/build/my_cpp_package
