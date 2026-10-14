@@ -1,5 +1,0 @@
-[0.127s] Invoking command in '/home/stefan/ros2/build/my_cpp_package': CMAKE_PREFIX_PATH=/home/stefan/ros2/.pixi/envs/default DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(my_ros2_project) /home/stefan/ros2/.pixi/envs/default/bin/cmake --build /home/stefan/ros2/build/my_cpp_package -- -j32 -l32
-[0.950s] [0mCMake Error: The current CMakeCache.txt directory /home/stefan/ros2/build/my_cpp_package/CMakeCache.txt is different than the directory /home/stefano/work/my_ros2_project/build/my_cpp_package where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[1.010s] no such file or directory
-[1.010s] [0mCMake Error: Generator: execution of make failed. Make command was: /home/stefano/work/my_ros2_project/.pixi/envs/default/bin/ninja -j32 -l32[0m
-[1.015s] Invoked command in '/home/stefan/ros2/build/my_cpp_package' returned '1': CMAKE_PREFIX_PATH=/home/stefan/ros2/.pixi/envs/default DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(my_ros2_project) /home/stefan/ros2/.pixi/envs/default/bin/cmake --build /home/stefan/ros2/build/my_cpp_package -- -j32 -l32

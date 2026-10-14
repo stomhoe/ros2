@@ -1,3 +1,19 @@
-# pixi environments
-.pixi/*
-!.pixi/config.toml
+# Pixi environment and local caches
+/.pixi/
+
+# Colcon build, install, and runtime logs
+/build/
+/install/
+/log/
+
+# CMake and editor-generated files
+compile_commands.json
+CMakeUserPresets.json
+*.swp
+*~
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
