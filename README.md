@@ -75,3 +75,37 @@ The node republishes markers every 100 ms. Each marker is identified by its
 namespace and ID, so RViz updates the existing shape instead of adding another
 one. The header frame must match RViz's Fixed Frame; the topic must match the
 MarkerArray display's Topic setting.
+
+## BPE Bug2 obstacle-avoidance demo
+
+See [`src/my_cpp_package/README.md`](src/my_cpp_package/README.md) for full
+run instructions, the BPE topic/blackboard wiring, and guidance for supplying
+your own pose and laser-scan inputs.
+
+The Bug2 BPE pipeline consumes `PoseStamped` and `LaserScan` inputs, publishes
+`TwistStamped` velocity commands, and visualizes the M-line, obstacle scan,
+robot, hit point, and goal in RViz. Its predefined route is from `(0, 0)` to
+`(4, 0)`, with a simulated circular obstacle in the way. The controller
+switches between moving toward the goal and following the obstacle boundary;
+it leaves the boundary when it reaches the M-line closer to the goal than its
+hit point.
+
+Build and run the demo with its Python differential-drive and obstacle
+simulator plus RViz:
+
+```sh
+pixi run colcon build --packages-up-to my_cpp_package --symlink-install
+pixi run bug2-bpe
+```
+
+To connect your own pose and laser scan publishers, disable the example:
+
+```sh
+pixi run ros2 launch my_cpp_package bug2.launch.py example:=false
+```
+
+Publish `geometry_msgs/msg/PoseStamped` to `/bug2/pose` and
+`sensor_msgs/msg/LaserScan` to `/bug2/scan`; pose and scan timestamps must
+continue arriving or the controller stops its commands. Velocity commands
+are published on `/bug2/cmd_vel` and RViz markers on `/bug2/markers`. This is
+a learning simulation, not a safety-rated controller.

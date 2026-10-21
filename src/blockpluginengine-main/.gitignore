@@ -1,0 +1,6 @@
+build/
+install/
+**/__pycache__/
+*.patch
+
+

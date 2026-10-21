@@ -1,0 +1,9 @@
+blocks:
+  - name: basic
+    type: bpe_test/TestBasicBlock
+    execution:
+      policy: timer
+      period: 10ms
+    config:
+      id: basic
+      value: 42

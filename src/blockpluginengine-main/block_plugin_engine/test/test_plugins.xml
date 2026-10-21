@@ -1,0 +1,24 @@
+<library path="bpe_test_plugins">
+
+  <class
+    name="bpe_test/TestBasicBlock"
+    type="bpe::test::TestBasicBlock"
+    base_class_type="bpe::IBlockPlugin">
+    <description>Basic BlockPluginEngine test Block.</description>
+  </class>
+
+  <class
+    name="bpe_test/TestTimerBlock"
+    type="bpe::test::TestTimerBlock"
+    base_class_type="bpe::IBlockPlugin">
+    <description>Timer-capable BlockPluginEngine test Block.</description>
+  </class>
+
+  <class
+    name="bpe_test/TestFailingBlock"
+    type="bpe::test::TestFailingBlock"
+    base_class_type="bpe::IBlockPlugin">
+    <description>BlockPluginEngine Block used to test lifecycle failures.</description>
+  </class>
+
+</library>

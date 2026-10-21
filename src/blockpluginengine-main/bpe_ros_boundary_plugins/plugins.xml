@@ -1,0 +1,16 @@
+<library path="bpe_ros_boundary_plugins">
+  <class
+    name="bpe_ros_boundary_plugins/RosInputBlock"
+    type="bpe_ros_boundary_plugins::RosInputBlock"
+    base_class_type="bpe::IBlockPlugin">
+    <description>Generic serialized ROS 2 subscription to BPE blackboard boundary.</description>
+  </class>
+
+  <class
+    name="bpe_ros_boundary_plugins/RosOutputBlock"
+    type="bpe_ros_boundary_plugins::RosOutputBlock"
+    base_class_type="bpe::IBlockPlugin">
+    <description>Generic BPE blackboard to serialized ROS 2 publication boundary.</description>
+  </class>
+
+</library>

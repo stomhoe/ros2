@@ -1,0 +1,32 @@
+
+    scheduler:
+      realtime:
+        enabled: false
+
+    blocks:
+      - name: ros_input
+        type: bpe_ros_boundary_plugins/RosInputBlock
+        config:
+          topic: /bpe_test/input
+          ros_type: geometry_msgs/msg/TwistStamped
+          blackboard_output: raw_twist
+
+      - name: scale_twist
+        type: my_cpp_package/TwistScaleBlock
+        execution:
+          policy: timer
+          period: 10ms
+        config:
+          blackboard_input: raw_twist
+          blackboard_output: scaled_twist
+          scale: 2.0
+
+      - name: ros_output
+        type: bpe_ros_boundary_plugins/RosOutputBlock
+        execution:
+          policy: timer
+          period: 10ms
+        config:
+          topic: /bpe_test/output
+          ros_type: geometry_msgs/msg/TwistStamped
+          blackboard_input: scaled_twist

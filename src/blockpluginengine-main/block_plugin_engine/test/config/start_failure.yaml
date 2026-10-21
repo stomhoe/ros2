@@ -1,0 +1,12 @@
+blocks:
+  - name: basic
+    type: bpe_test/TestBasicBlock
+    config:
+      id: basic
+      value: 42
+
+  - name: failing
+    type: bpe_test/TestFailingBlock
+    config:
+      id: failing
+      fail_on: start

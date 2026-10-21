@@ -1,0 +1,8 @@
+scheduler:
+  realtime:
+    enabled: false
+
+  timing:
+    spin_before_deadline: 500us
+
+blocks: []

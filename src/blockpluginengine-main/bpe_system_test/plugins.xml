@@ -1,0 +1,22 @@
+<library path="bpe_system_test_plugins">
+  <class
+    name="bpe_system_test/TwistProducerBlock"
+    type="bpe_system_test::TwistProducerBlock"
+    base_class_type="bpe::IBlockPlugin">
+    <description>Internal deterministic TwistStamped producer block.</description>
+  </class>
+
+  <class
+    name="bpe_system_test/TwistTransformBlock"
+    type="bpe_system_test::TwistTransformBlock"
+    base_class_type="bpe::IBlockPlugin">
+    <description>Internal TwistStamped transformation block.</description>
+  </class>
+
+  <class
+    name="bpe_system_test/TwistCheckerBlock"
+    type="bpe_system_test::TwistCheckerBlock"
+    base_class_type="bpe::IBlockPlugin">
+    <description>Internal TwistStamped validation block.</description>
+  </class>
+</library>

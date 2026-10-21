@@ -1,0 +1,43 @@
+scheduler:
+  realtime:
+    enabled: false
+
+  timing:
+    spin_before_deadline: 500us
+
+blocks:
+  - name: pure_pursuit
+    type: my_cpp_package/PurePursuitBlock
+    execution:
+      policy: timer
+      period: 50ms
+    config:
+      blackboard_output: pursuit_markers
+      output_frame: world
+      output_namespace: pure_pursuit
+      point1_x: 0.0
+      point1_y: 0.0
+      point2_x: 2.0
+      point2_y: 0.0
+      point3_x: 2.0
+      point3_y: 2.0
+      initial_pose_x: 0.0
+      initial_pose_y: 0.0
+      initial_pose_yaw: 0.0
+      lookahead_distance: 0.4
+      linear_speed: 0.8
+      max_angular_speed: 3.0
+      goal_tolerance: 0.1
+      update_period: 0.05
+      debug_arc_duration: 3.0
+
+  - name: marker_output
+    type: bpe_ros_boundary_plugins/RosOutputBlock
+    execution:
+      policy: timer
+      period: 50ms
+    config:
+      topic: /turtle_visualization
+      ros_type: visualization_msgs/msg/MarkerArray
+      blackboard_input: pursuit_markers
+      qos_depth: 10

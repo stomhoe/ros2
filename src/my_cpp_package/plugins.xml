@@ -1,0 +1,21 @@
+<library path="my_cpp_bpe_plugins">
+  <class
+    name="my_cpp_package/PurePursuitBlock"
+    type="my_cpp_package::PurePursuitBlock"
+    base_class_type="bpe::IBlockPlugin">
+    <description>Pure-pursuit path follower that produces RViz visualization markers.</description>
+  </class>
+  <class
+    name="my_cpp_package/Bug2ControllerBlock"
+    type="my_cpp_package::Bug2ControllerBlock"
+    base_class_type="bpe::IBlockPlugin">
+    <description>Bug2 obstacle-avoidance controller using pose and laser scan input.</description>
+  </class>
+  <class
+    name="my_cpp_package/TwistScaleBlock"
+    type="my_cpp_package::TwistScaleBlock"
+    base_class_type="bpe::IBlockPlugin">
+    <description>Scales TwistStamped commands.</description>
+  </class>
+
+</library>

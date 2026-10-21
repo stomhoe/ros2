@@ -1,0 +1,18 @@
+scheduler:
+  realtime:
+    enabled: false
+
+  timing:
+    spin_before_deadline: 500us
+
+blocks:
+  - name: ros_output
+    type: bpe_ros_boundary_plugins/RosOutputBlock
+    execution:
+      policy: timer
+      period: 10ms
+    config:
+      topic: /bpe_test/output
+      ros_type: geometry_msgs/msg/TwistStamped
+      blackboard_input: processed_twist
+      qos_depth: 10

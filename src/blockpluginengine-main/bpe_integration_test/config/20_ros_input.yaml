@@ -1,0 +1,15 @@
+scheduler:
+  realtime:
+    enabled: false
+
+  timing:
+    spin_before_deadline: 500us
+
+blocks:
+  - name: ros_input
+    type: bpe_ros_boundary_plugins/RosInputBlock
+    config:
+      topic: /bpe_test/input
+      ros_type: geometry_msgs/msg/TwistStamped
+      blackboard_output: raw_twist
+      qos_depth: 10

@@ -1,0 +1,38 @@
+scheduler:
+  realtime:
+    enabled: false
+
+  timing:
+    spin_before_deadline: 500us
+
+blocks:
+  - name: ros_input
+    type: bpe_ros_boundary_plugins/RosInputBlock
+    config:
+      topic: /bpe_test/input
+      ros_type: geometry_msgs/msg/TwistStamped
+      blackboard_output: raw_twist
+      qos_depth: 10
+
+  - name: twist_transform
+    type: bpe_system_test/TwistTransformBlock
+    execution:
+      policy: timer
+      period: 10ms
+    config:
+      blackboard_input: raw_twist
+      blackboard_output: processed_twist
+      linear_x_scale: 2.0
+      linear_y_scale: -1.0
+      angular_z_offset: 0.25
+
+  - name: ros_output
+    type: bpe_ros_boundary_plugins/RosOutputBlock
+    execution:
+      policy: timer
+      period: 10ms
+    config:
+      topic: /bpe_test/output
+      ros_type: geometry_msgs/msg/TwistStamped
+      blackboard_input: processed_twist
+      qos_depth: 10

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>bpe_system_test</name>
+  <version>0.0.1</version>
+
+  <description>System-test plugins for BlockPluginEngine.</description>
+
+  <maintainer email="maintainer@example.com">Maintainer</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>block_plugin_engine</depend>
+  <depend>pluginlib</depend>
+  <depend>geometry_msgs</depend>
+
+  <test_depend>ament_cmake_gtest</test_depend>
+  <test_depend>yaml-cpp</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

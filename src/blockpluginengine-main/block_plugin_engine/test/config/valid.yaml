@@ -1,0 +1,27 @@
+blocks:
+  - name: basic_a
+    type: bpe_test/TestBasicBlock
+    config:
+      id: basic_a
+      value: 10
+
+  - name: basic_b
+    type: bpe_test/TestBasicBlock
+    config:
+      id: basic_b
+      value: 20
+
+  - name: timer
+    type: bpe_test/TestTimerBlock
+    execution:
+      policy: timer
+      period: 10ms
+    config:
+      id: timer
+      label: periodic
+
+  - name: idle_timer
+    type: bpe_test/TestTimerBlock
+    config:
+      id: idle_timer
+      label: not_scheduled

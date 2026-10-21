@@ -1,30 +1,62 @@
 cmake_minimum_required(VERSION 3.8)
 project(my_cpp_package)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(block_plugin_engine REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(pluginlib REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(visualization_msgs REQUIRED)
 
-add_executable(my_cpp_node src/my_cpp_node.cpp)
-ament_target_dependencies(my_cpp_node rclcpp visualization_msgs)
+add_executable(pp_no_bpe src/pp_no_bpe.cpp)
+ament_target_dependencies(pp_no_bpe rclcpp visualization_msgs)
 
 add_executable(rviz_topic_demo src/rviz_topic_demo.cpp)
 ament_target_dependencies(rviz_topic_demo rclcpp visualization_msgs)
 target_compile_features(rviz_topic_demo PRIVATE cxx_std_17)
 
-target_include_directories(my_cpp_node PUBLIC
+add_library(my_cpp_bpe_plugins SHARED
+  src/bug2_controller_block.cpp
+  src/pure_pursuit_block.cpp
+  src/twist_scale_block.cpp
+)
+target_compile_features(my_cpp_bpe_plugins PUBLIC cxx_std_20)
+ament_target_dependencies(my_cpp_bpe_plugins
+  block_plugin_engine
+  geometry_msgs
+  pluginlib
+  sensor_msgs
+  visualization_msgs
+)
+
+pluginlib_export_plugin_description_file(block_plugin_engine plugins.xml)
+
+target_include_directories(pp_no_bpe PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
-target_compile_features(my_cpp_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+target_compile_features(pp_no_bpe PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
-install(TARGETS my_cpp_node
+install(TARGETS pp_no_bpe
   DESTINATION lib/${PROJECT_NAME})
 install(TARGETS rviz_topic_demo
+  DESTINATION lib/${PROJECT_NAME})
+install(TARGETS my_cpp_bpe_plugins
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin)
+install(DIRECTORY config
+  DESTINATION share/${PROJECT_NAME})
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME})
+install(PROGRAMS scripts/bug2_example.py
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

@@ -1,0 +1,19 @@
+scheduler:
+  realtime:
+    enabled: false
+
+  timing:
+    spin_before_deadline: 500us
+
+blocks:
+  - name: twist_transform
+    type: bpe_system_test/TwistTransformBlock
+    execution:
+      policy: timer
+      period: 10ms
+    config:
+      blackboard_input: raw_twist
+      blackboard_output: processed_twist
+      linear_x_scale: 2.0
+      linear_y_scale: -1.0
+      angular_z_offset: 0.25

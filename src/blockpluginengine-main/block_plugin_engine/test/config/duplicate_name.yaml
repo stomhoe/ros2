@@ -1,0 +1,12 @@
+blocks:
+  - name: duplicate
+    type: bpe_test/TestBasicBlock
+    config:
+      id: first
+      value: 1
+
+  - name: duplicate
+    type: bpe_test/TestBasicBlock
+    config:
+      id: second
+      value: 2

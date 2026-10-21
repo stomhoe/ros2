@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>bpe_integration_test</name>
+  <version>0.0.1</version>
+
+  <description>End-to-end ROS 2 integration tests for BlockPluginEngine.</description>
+
+  <maintainer email="santiago.tapia@upm.es">Santiago Tapia-Fernández</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>block_plugin_engine</exec_depend>
+  <exec_depend>bpe_ros_boundary_plugins</exec_depend>
+  <exec_depend>bpe_system_test</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>lifecycle_msgs</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+
+  <test_depend>launch_testing</test_depend>
+  <test_depend>launch_testing_ament_cmake</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

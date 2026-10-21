@@ -1,0 +1,198 @@
+BEGINNER BPE EXERCISE: Build and Connect a Block
+================================================
+
+Goal
+----
+Create a small BPE plugin class that receives a TwistStamped message,
+changes it, and sends it on. Wire the block between BPE's ROS input and
+ROS output blocks.
+
+Your block will double the forward speed:
+
+    input twist.linear.x:   1.0
+    output twist.linear.x:  2.0
+
+The exercise is about BPE blocks and message flow. It will not move a
+turtlesim turtle.
+
+
+How the data flows
+------------------
+
+ROS topic                 Blackboard label        ROS topic
+-----------               ----------------        ---------
+/bpe_test/input  ->       raw_twist       ->      Your block
+                                                   |
+                                                   v
+/bpe_test/output <-       scaled_twist    <-      Your block
+
+A ROS topic is how data enters or leaves ROS. A blackboard label is an
+internal name that connects BPE blocks. They are different names for
+different parts of the pipeline.
+
+The pipeline has three blocks:
+
+1. RosInputBlock subscribes to /bpe_test/input and writes to raw_twist.
+2. Your TwistScaleBlock reads raw_twist and writes scaled_twist.
+3. RosOutputBlock reads scaled_twist and publishes /bpe_test/output.
+
+
+Part 1: Define your plugin class
+--------------------------------
+
+Open the starter source file:
+
+    src/my_cpp_package/src/twist_scale_block.cpp
+
+The file already has the required includes, class declaration, and typed
+blackboard members. configure() reads and binds the two blackboard labels
+and reads the optional scale setting (default 2.0). execute() reads new
+messages, copies them to the output, then applies the configured scale to
+linear.x.
+
+Hints for the class:
+
+- Include the BPE block, timer, and typed-blackboard headers. Look at
+  src/my_cpp_package/src/pure_pursuit_block.cpp for a working plugin
+  example in this package.
+- Include geometry_msgs/msg/twist_stamped.hpp and use
+  geometry_msgs::msg::TwistStamped as your message type.
+- Read the configure() method carefully. Check how it handles missing
+  labels, converts YAML values, and binds the typed endpoints.
+- In execute(), input.value() is the received TwistStamped message and
+  output.value() is the outgoing message. The code copies the input
+  before scaling so other fields stay unchanged.
+- Change scale in the YAML to 0.5 and predict the output when the input
+  linear.x is 1.0. Try a negative value only to reason about reversing
+  the command; do not send exercise commands to a real robot.
+- configure() returns bpe::BlockResult, while execute() returns
+  bpe::ExecutionResult.
+- At the end of the file, register the class with pluginlib:
+
+    PLUGINLIB_EXPORT_CLASS(
+      my_cpp_package::TwistScaleBlock,
+      bpe::IBlockPlugin)
+
+Use the namespace my_cpp_package for the class. A BPE plugin has a
+configure method because the engine creates the class and passes its
+YAML config to it. Its execute method is called periodically because
+this class implements ITimerBlock and will have an execution period.
+
+
+Part 2: Make the class build and discoverable
+---------------------------------------------
+
+1. The source is already included in the my_cpp_bpe_plugins library in
+   CMakeLists.txt. Add the PLUGINLIB_EXPORT_CLASS registration at the
+   bottom of the source file, then add a second class entry to
+   src/my_cpp_package/plugins.xml:
+
+       name: my_cpp_package/TwistScaleBlock
+       type: my_cpp_package::TwistScaleBlock
+       base_class_type: bpe::IBlockPlugin
+
+   Keep the existing library path; both plugins are built into the same
+   shared library.
+2. The package already declares geometry_msgs and pluginlib dependencies
+   in package.xml, so no package.xml change should be needed.
+
+
+Part 3: Connect the blocks in YAML
+----------------------------------
+
+Create:
+
+    src/my_cpp_package/config/twist_scale_exercise.yaml
+
+Use this pipeline as a guide. Replace the TODO values with the right
+names, and keep the indentation:
+
+    scheduler:
+      realtime:
+        enabled: false
+
+    blocks:
+      - name: ros_input
+        type: bpe_ros_boundary_plugins/RosInputBlock
+        config:
+          topic: /bpe_test/input
+          ros_type: geometry_msgs/msg/TwistStamped
+          blackboard_output: TODO
+
+      - name: scale_twist
+        type: TODO
+        execution:
+          policy: timer
+          period: 10ms
+        config:
+          blackboard_input: TODO
+          blackboard_output: TODO
+
+      - name: ros_output
+        type: bpe_ros_boundary_plugins/RosOutputBlock
+        execution:
+          policy: timer
+          period: 10ms
+        config:
+          topic: /bpe_test/output
+          ros_type: geometry_msgs/msg/TwistStamped
+          blackboard_input: TODO
+
+Hints:
+- The type for your class is the plugin name you added to plugins.xml.
+- A producer's blackboard label must match the next block's consumer
+  label exactly.
+- The input boundary produces raw_twist. Your plugin consumes raw_twist
+  and produces scaled_twist. The output boundary consumes scaled_twist.
+- RosInputBlock is driven by incoming ROS messages, so it has no
+  execution section. Your timer block and RosOutputBlock do need one.
+
+
+Part 4: Build and try it
+------------------------
+
+Build from the workspace root:
+
+    pixi run colcon build --packages-up-to my_cpp_package --symlink-install
+
+In one terminal, start BPE with your new YAML file:
+
+    pixi run ros2 run block_plugin_engine block_plugin_engine --ros-args -p config_file:=$(pwd)/src/my_cpp_package/config/twist_scale_exercise.yaml -p autostart:=true
+
+In another terminal, watch the output:
+
+    pixi run ros2 topic echo /bpe_test/output
+
+In a third terminal, send one input message:
+
+    pixi run ros2 topic pub --once /bpe_test/input geometry_msgs/msg/TwistStamped "{header: {frame_id: exercise}, twist: {linear: {x: 1.0}, angular: {z: 0.5}}}"
+
+The output should contain linear.x: 2.0. Other fields should be copied
+unchanged. Start BPE before publishing so the input subscription is ready.
+Stop the BPE process with Ctrl+C when finished.
+
+
+If something does not work
+--------------------------
+
+- "Library/class not found": check the class name and C++ type in
+  plugins.xml, the PLUGINLIB_EXPORT_CLASS line, and the library target.
+- "Label type mismatch": use TwistStamped consistently for the typed
+  plugin and both ROS boundary blocks.
+- No output message: check that the publisher topic is exactly
+  /bpe_test/input, the output listener is on /bpe_test/output, and each
+  blackboard label matches between producer and consumer.
+- Build errors about missing headers/types: check the include and that
+  geometry_msgs is a dependency of the plugin library and package.
+
+
+Think about it
+--------------
+
+- Which names in the YAML are ROS topics, and which are blackboard labels?
+- Why does RosInputBlock not need a timer execution section?
+- What would you change to double angular.z instead of linear.x?
+- What happens if the producer label and consumer label differ?
+
+Optional extension: add a second scale parameter for angular.z and apply
+it independently from the linear scale.

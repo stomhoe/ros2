@@ -5,11 +5,13 @@ platforms = ["linux-64"]
 version = "0.1.0"
 
 [tasks]
-hello-cpp = "ros2 run my_cpp_package my_cpp_node"
-pursuit = "ros2 run my_cpp_package my_cpp_node --ros-args"
+hello-cpp = "ros2 run my_cpp_package pp_no_bpe"
+pursuit = "ros2 run my_cpp_package pp_no_bpe --ros-args"
 rviz = "rviz2 -d src/my_cpp_package/config/rviz.rviz"
 rviz-demo-node = "ros2 run my_cpp_package rviz_topic_demo"
 rviz-demo = "rviz2 -d src/my_cpp_package/config/rviz_demo.rviz"
+pure-pursuit-bpe = "ros2 launch my_cpp_package pure_pursuit.launch.py"
+bug2-bpe = "ros2 launch my_cpp_package bug2.launch.py"
 build = "colcon build --symlink-install"
 
 [activation]

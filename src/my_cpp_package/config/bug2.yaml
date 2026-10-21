@@ -1,0 +1,68 @@
+scheduler:
+  realtime:
+    enabled: false
+  timing:
+    spin_before_deadline: 500us
+
+blocks:
+  - name: pose_input
+    type: bpe_ros_boundary_plugins/RosInputBlock
+    config:
+      topic: /bug2/pose
+      ros_type: geometry_msgs/msg/PoseStamped
+      blackboard_output: robot_pose
+      qos_depth: 10
+
+  - name: scan_input
+    type: bpe_ros_boundary_plugins/RosInputBlock
+    config:
+      topic: /bug2/scan
+      ros_type: sensor_msgs/msg/LaserScan
+      blackboard_output: obstacle_scan
+      qos_depth: 10
+
+  - name: bug2_controller
+    type: my_cpp_package/Bug2ControllerBlock
+    execution:
+      policy: timer
+      period: 50ms
+    config:
+      pose_input: robot_pose
+      scan_input: obstacle_scan
+      command_output: robot_command
+      markers_output: bug2_markers
+      frame: world
+      start_x: 0.0
+      start_y: 0.0
+      goal_x: 4.0
+      goal_y: 0.0
+      linear_speed: 0.35
+      boundary_speed: 0.22
+      max_angular_speed: 1.0
+      obstacle_distance: 0.7
+      wall_distance: 0.48
+      goal_tolerance: 0.15
+      pose_timeout: 0.5
+      scan_timeout: 0.5
+
+  - name: command_output
+    type: bpe_ros_boundary_plugins/RosOutputBlock
+    execution:
+      policy: timer
+      period: 50ms
+    config:
+      topic: /bug2/cmd_vel
+      ros_type: geometry_msgs/msg/TwistStamped
+      blackboard_input: robot_command
+      qos_depth: 10
+
+  - name: marker_output
+    type: bpe_ros_boundary_plugins/RosOutputBlock
+    execution:
+      policy: timer
+      period: 50ms
+    config:
+      topic: /bug2/markers
+      ros_type: visualization_msgs/msg/MarkerArray
+      blackboard_input: bug2_markers
+      qos_depth: 10
