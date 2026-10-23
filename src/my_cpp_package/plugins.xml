@@ -18,12 +18,6 @@
     <description>Pure-pursuit controller using Bug2 obstacle-avoidance planning.</description>
   </class>
   <class
-    name="my_cpp_package/TimedElasticBandBlock"
-    type="my_cpp_package::TimedElasticBandBlock"
-    base_class_type="bpe::IBlockPlugin">
-    <description>Optimizes a timed local trajectory band around laser obstacles.</description>
-  </class>
-  <class
     name="my_cpp_package/TwistScaleBlock"
     type="my_cpp_package::TwistScaleBlock"
     base_class_type="bpe::IBlockPlugin">

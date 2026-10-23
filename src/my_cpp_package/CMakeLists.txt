@@ -20,7 +20,6 @@ add_library(my_cpp_bpe_plugins SHARED
   src/bug2_controller_block.cpp
   src/pp_bug2.cpp
   src/pure_pursuit_block.cpp
-  src/timed_elastic_band_block.cpp
   src/twist_scale_block.cpp
 )
 target_compile_features(my_cpp_bpe_plugins PUBLIC cxx_std_20)

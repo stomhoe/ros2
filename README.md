@@ -46,36 +46,6 @@ lookahead distance creates tighter turns; the default `0.4 m` makes cornering
 more apparent on the example route. The cyan debug arc previews the commanded
 turn for `debug_arc_duration` seconds.
 
-## Learning how ROS topics connect to RViz
-
-The separate `rviz_topic_demo` node is a small example of publishing
-`visualization_msgs/msg/MarkerArray`. It publishes a fixed blue path, a moving
-orange sphere, and a text label on `/rviz_demo/markers`. RViz subscribes to
-that topic through its MarkerArray display; the display's Fixed Frame is
-`world`, matching each marker's `header.frame_id`.
-
-Build once, then start the node and its dedicated RViz configuration in
-separate terminals:
-
-```sh
-pixi run build
-pixi run rviz-demo-node
-pixi run rviz-demo
-```
-
-Inspect the connection from another terminal:
-
-```sh
-pixi run ros2 topic list
-pixi run ros2 topic info /rviz_demo/markers
-pixi run ros2 topic echo /rviz_demo/markers --once
-```
-
-The node republishes markers every 100 ms. Each marker is identified by its
-namespace and ID, so RViz updates the existing shape instead of adding another
-one. The header frame must match RViz's Fixed Frame; the topic must match the
-MarkerArray display's Topic setting.
-
 ## BPE Bug2 obstacle-avoidance demo
 
 See [`src/my_cpp_package/README.md`](src/my_cpp_package/README.md) for full

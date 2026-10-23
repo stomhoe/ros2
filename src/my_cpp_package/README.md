@@ -1,19 +1,13 @@
 # BPE Bug2 demo
 
-This package contains ROS 2 / Block Plugin Engine (BPE) navigation demos. The
-standalone Bug2 controller uses direct goal-heading and wall-following control.
-The combined version uses Pure Pursuit to turn a target
-point into linear and angular velocity commands. Bug2 is the planner: it
+This package contains two ROS 2 / Block Plugin Engine (BPE) navigation demos.
+The standalone Bug2 controller uses direct goal-heading and wall-following
+control. The combined version uses Pure Pursuit to turn a target point into
+linear and angular velocity commands. Bug2 is the planner: it
 chooses the goal as the target while the M-line is clear, and switches to a
 boundary-following target after an obstacle is detected. It resumes
 goal-seeking after returning to the start-to-goal M-line closer to the goal
 than the obstacle hit point.
-
-The `TimedElasticBandBlock` demo is a separate, self-contained TEB-style local
-planner/controller, not the upstream `teb_local_planner` package. It optimizes
-a short sequence of robot poses against laser obstacle returns and smoothness,
-then time-parameterizes the first segment into a velocity command. It does not
-use Bug2 or Pure Pursuit.
 
 The default example uses a Python differential-drive simulator. It creates a
 round obstacle across the M-line and several randomized wall segments close
@@ -30,10 +24,9 @@ pixi run colcon build --packages-up-to my_cpp_package --symlink-install
 pixi run bug2-bpe
 ```
 
-Use `pixi run bug2-bpe` for combined Pure Pursuit + Bug2, `pixi run
-bug2-standalone` for standalone Bug2, or `pixi run teb-bpe` for the timed
-elastic band demo. Each command starts BPE, the example simulator, and RViz;
-run only one at a time. Press Ctrl+C to stop.
+Use `pixi run bug2-bpe` for combined Pure Pursuit + Bug2 or
+`pixi run bug2-standalone` for standalone Bug2. Each command starts BPE, the
+example simulator, and RViz; run only one at a time. Press Ctrl+C to stop.
 The robot starts at `(0, 0)` and aims for `(4, 0)`. The RViz left-side
 **Displays** panel has three entries:
 
@@ -48,10 +41,8 @@ The robot starts at `(0, 0)` and aims for `(4, 0)`. The RViz left-side
    laser dots, which show what the robot currently senses.
 
 The robot arrow points in its heading direction. In the combined demo, the
-cyan sphere marks the current Pure Pursuit target. In the TEB demo, a cyan
-line shows its optimized local trajectory. Watch the status text:
-**GO TO GOAL** means Bug2
-has selected the goal; **FOLLOW BOUNDARY** means Bug2 has selected a local
+cyan sphere marks the current Pure Pursuit target. Watch the status text:
+**GO TO GOAL** means Bug2 has selected the goal; **FOLLOW BOUNDARY** means Bug2 has selected a local
 obstacle-following behavior; **GOAL REACHED** means the robot stopped within
 the goal tolerance. The standalone demo turns toward the goal and follows the
 nearby wall directly; the combined demo uses Pure Pursuit to steer toward
@@ -74,15 +65,14 @@ pixi run ros2 launch my_cpp_package bug2.launch.py rviz:=false
 
 ## BPE pipeline and topics
 
-The combined, standalone, and TEB pipelines use `config/bug2.yaml`,
-`config/bug2_standalone.yaml`, and `config/timed_elastic_band.yaml`,
-respectively:
+The combined and standalone pipelines use `config/bug2.yaml` and
+`config/bug2_standalone.yaml`, respectively:
 
 | Block | Input/output | Blackboard label |
 | --- | --- | --- |
 | ROS input boundary | `/bug2/pose` (`geometry_msgs/msg/PoseStamped`) | `robot_pose` |
 | ROS input boundary | `/bug2/scan` (`sensor_msgs/msg/LaserScan`) | `obstacle_scan` |
-| `PurePursuitBug2Block`, `Bug2ControllerBlock`, or `TimedElasticBandBlock` | Combined Bug2/Pure Pursuit, standalone Bug2, or local timed-band optimization | `robot_pose`, `obstacle_scan`, `robot_command`, `bug2_markers` or `teb_markers` |
+| `PurePursuitBug2Block` or `Bug2ControllerBlock` | Combined Bug2/Pure Pursuit or standalone Bug2 | `robot_pose`, `obstacle_scan`, `robot_command`, `bug2_markers` |
 | ROS output boundary | `/bug2/cmd_vel` (`geometry_msgs/msg/TwistStamped`) | `robot_command` |
 | ROS output boundary | `/bug2/markers` (`visualization_msgs/msg/MarkerArray`) | `bug2_markers` |
 

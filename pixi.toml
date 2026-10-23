@@ -6,12 +6,9 @@ version = "0.1.0"
 
 [tasks]
 rviz = "rviz2 -d src/my_cpp_package/config/rviz.rviz"
-rviz-demo-node = "ros2 run my_cpp_package rviz_topic_demo"
-rviz-demo = "rviz2 -d src/my_cpp_package/config/rviz_demo.rviz"
 pure-pursuit-bpe = "ros2 launch my_cpp_package pure_pursuit.launch.py"
 bug2-bpe = "ros2 launch my_cpp_package bug2.launch.py"
 bug2-standalone = "ros2 launch my_cpp_package bug2.launch.py config:=bug2_standalone.yaml"
-teb-bpe = "ros2 launch my_cpp_package bug2.launch.py config:=timed_elastic_band.yaml"
 build = "colcon build --symlink-install"
 
 [activation]
