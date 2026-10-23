@@ -46,7 +46,7 @@ class Bug2Example(Node):
         for index in range(max(0, count)):
             side = 1.0 if index % 2 == 0 else -1.0
             center_x = rng.uniform(0.65, 3.55)
-            center_y = side * rng.uniform(2.2, 3.0)
+            center_y = side * rng.uniform(1.35, 1.85)
             length = rng.uniform(0.45, 0.95)
             angle = rng.uniform(-0.45, 0.45)
             half_dx = 0.5 * length * math.cos(angle)

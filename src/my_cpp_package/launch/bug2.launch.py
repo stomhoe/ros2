@@ -10,11 +10,18 @@ from launch.substitutions import PathJoinSubstitution
 
 def generate_launch_description():
     package_share = FindPackageShare("my_cpp_package")
-    config_file = PathJoinSubstitution([package_share, "config", "bug2.yaml"])
+    config_file = PathJoinSubstitution(
+        [package_share, "config", LaunchConfiguration("config")]
+    )
     rviz_config = PathJoinSubstitution([package_share, "config", "bug2.rviz"])
 
     return LaunchDescription(
         [
+            DeclareLaunchArgument(
+                "config",
+                default_value="bug2.yaml",
+                description="BPE pipeline config file in the package config directory.",
+            ),
             DeclareLaunchArgument(
                 "rviz",
                 default_value="true",

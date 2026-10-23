@@ -9,7 +9,19 @@
     name="my_cpp_package/Bug2ControllerBlock"
     type="my_cpp_package::Bug2ControllerBlock"
     base_class_type="bpe::IBlockPlugin">
-    <description>Bug2 obstacle-avoidance controller using pose and laser scan input.</description>
+    <description>Bug2 planner with direct goal-heading and wall-following control.</description>
+  </class>
+  <class
+    name="my_cpp_package/PurePursuitBug2Block"
+    type="my_cpp_package::PurePursuitBug2Block"
+    base_class_type="bpe::IBlockPlugin">
+    <description>Pure-pursuit controller using Bug2 obstacle-avoidance planning.</description>
+  </class>
+  <class
+    name="my_cpp_package/TimedElasticBandBlock"
+    type="my_cpp_package::TimedElasticBandBlock"
+    base_class_type="bpe::IBlockPlugin">
+    <description>Optimizes a timed local trajectory band around laser obstacles.</description>
   </class>
   <class
     name="my_cpp_package/TwistScaleBlock"
